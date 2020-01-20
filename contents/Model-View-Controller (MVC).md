@@ -1,7 +1,7 @@
 # Model-View-Controller (MVC)
 
 
-![](/Users/pengqianqian/Desktop/GitHub/Articles/resources/App-MVC-01.jpg)
+![](https://github.com/liuzhongning/Articles/blob/master/resources/App-MVC-01.jpg)
 
 
 此系列文章是《App架构》的读书笔记及心得，主要详细讲解了以下五种最为主要的 app 设计模式：
@@ -19,7 +19,7 @@
 
 ### MVC 简述
 
-![](/Users/pengqianqian/Desktop/GitHub/Articles/resources/App-MVC-02.jpg)
+![](https://github.com/liuzhongning/Articles/blob/master/resources/App-MVC-02.jpg)
 
 
 MVC 是 App 开发中所有设计模式的基础，Apple 在所有的实例项目中都使用了这种模式，加上 Cocoa 本身就是针对这种模式设计的，所以 MVC 成为了 iOS、macOS、tvOS 和 watchOS 上官方认证的 app 架构模式。
@@ -29,7 +29,7 @@ MVC 的核心思想是，controller 层负责将 model 层和 view 层撮合到�
 
 ### 三者的职责：
 
-![](/Users/pengqianqian/Desktop/GitHub/Articles/resources/App-MVC-03.jpg)
+![](https://github.com/liuzhongning/Articles/blob/master/resources/App-MVC-03.jpg)
 
 
 - Model： 负责封装数据、存储和处理数据运算等工作
