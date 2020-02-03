@@ -7,7 +7,7 @@
 
 #### 2.新建这个仓库的目的
 
-写博客专用，持续更新。
+2020 年之后写博客专用，持续更新。
 
 # Contents
 
@@ -15,7 +15,7 @@
 |:-------:|:-------:|
 | Architecture | [Model-View-Controller (MVC)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-Controller%20(MVC).md)|
 | Summary | [2019 Summary](https://github.com/liuzhongning/Articles/blob/master/contents/2019年终总结.md)|
-| OSS Upload| [iOS 表单格式上传 OSS](https://github.com/liuzhongning/Articles/blob/master/contents/iOS%20表单格式上传%20OSS.md)|
+| OSS Upload| [iOS 表单格式上传 OSS](https://github.com/liuzhongning/Articles/blob/master/contents/iOS%20表单格式上传%20OSS.md) <br> [JS 表单格式直传 OSS](https://github.com/liuzhongning/Articles/blob/master/contents/JS%20表单格式直传%20OSS.md)|
 
 
 
