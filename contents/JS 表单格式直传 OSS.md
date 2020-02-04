@@ -108,7 +108,7 @@ function __uploadOss() {
 
 相关文章
 
-[iOS 表单格式上传 OSS](https://juejin.im/post/5df8d65d6fb9a01600533fad)
+[iOS 表单格式上传 OSS](https://github.com/liuzhongning/Articles/blob/master/contents/iOS%20表单格式上传%20OSS.md)
 
 参考文档
 
