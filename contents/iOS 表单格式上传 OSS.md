@@ -124,8 +124,12 @@
 }
 ```
 
+相关文章：
 
-#### 参考文档：
+- [JS 表单格式直传 OSS](https://github.com/liuzhongning/Articles/blob/master/contents/JS%20表单格式直传%20OSS.md)
+- [Node.js OSS 后端签名](https://github.com/liuzhongning/Articles/blob/master/contents/Node.js%20OSS%20后端签名.md)
+
+参考文档：
 
 - [PostObject](https://help.aliyun.com/document_detail/31988.html?spm=5176.product31815.6.881.0b4gqm)
 - [表单上传](https://helpcdn.aliyun.com/document_detail/31849.html)
