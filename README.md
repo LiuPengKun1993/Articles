@@ -40,20 +40,6 @@
 - [iOS开发之源码解析 - Masonry](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之源码解析%20-%20Masonry.md)
 - [iOS开发之源码解析 - MBProgressHUD](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之源码解析%20-%20MBProgressHUD.md)
 
-### 架构
-- [模块化与解耦](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/模块化与解耦.md)
-- [iOS开发技巧 - UIViewController 基类设计](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发技巧%20-%20UIViewController%20基类设计.md)
-
-### 算法
-- [刷算法 - 算法练习](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/刷算法%20-%20算法练习.md)
-- [算法-几种排序算法 OC 版](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/算法-几种排序算法%20OC%20版.md)
-
-### 支付
-- [iOS开发之 - 内购](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20内购.md)
-- [iOS开发之 - 微信支付](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20微信支付.md)
-- [iOS开发之 - 支付宝支付](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20支付宝支付.md)
-- [iOS开发之 - 银联支付](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20银联支付.md)
-
 ### RunTime & RunLoop & 多线程
 - [iOS 开发中 runtime 常用的几种方法](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS%20开发中%20runtime%20常用的几种方法.md)
 - [iOS开发之 - Runtime](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20Runtime.md)
@@ -61,6 +47,11 @@
 - [iOS开发之 - RunLoop](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20RunLoop.md)
 - [iOS开发之 - 多线程](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20多线程.md)
 
+### 支付
+- [iOS开发之 - 内购](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20内购.md)
+- [iOS开发之 - 微信支付](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20微信支付.md)
+- [iOS开发之 - 支付宝支付](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20支付宝支付.md)
+- [iOS开发之 - 银联支付](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20银联支付.md)
 
 ### 三方库
 - [iOS开发之 - SDWebImage 的使用](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20SDWebImage%20的使用.md)
@@ -74,10 +65,9 @@
 - [iOS 动画 - UIView Animation](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS%20动画%20-%20UIView%20Animation.md)
 - [iOS开发之 - CADisplayLink 实现酷炫动画](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20CADisplayLink%20实现酷炫动画.md)
 
-### 小项目
-- [iOS开发 - 随机图片验证码封装](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发%20-%20随机图片验证码封装.md)
-- [iOS开发 - 圆形验证码(或密码)输入框的封装](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发%20-%20圆形验证码(或密码)输入框的封装.md)
-- [iOS开发 - 仿简书个人主页多页面滑动视图](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发%20-%20仿简书个人主页多页面滑动视图.md)
+### 算法
+- [刷算法 - 算法练习](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/刷算法%20-%20算法练习.md)
+- [算法-几种排序算法 OC 版](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/算法-几种排序算法%20OC%20版.md)
 
 ### Swift
 - [iOS 开发 - Swift 全面系统的学习](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS%20开发%20-%20Swift%20全面系统的学习.md)
@@ -85,8 +75,12 @@
 ### 前端
 - [前端笔记 - HTML 特殊标签实现文字滚动](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/%20前端笔记%20-%20HTML%20特殊标签实现文字滚动.md)
 
+### 封装的小项目
+- [iOS开发 - 随机图片验证码封装](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发%20-%20随机图片验证码封装.md)
+- [iOS开发 - 圆形验证码(或密码)输入框的封装](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发%20-%20圆形验证码(或密码)输入框的封装.md)
+- [iOS开发 - 仿简书个人主页多页面滑动视图](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发%20-%20仿简书个人主页多页面滑动视图.md)
 
-### 小知识点
+### 开发中遇到的小知识点
 
 - [CALayer 及 CALayer 的 contents 系列属性](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/CALayer%20及%20CALayer%20的%20contents%20系列属性.md)
 - [iOS 开发中导航栏渐变的两种方法](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS%20开发中导航栏渐变的两种方法.md)
@@ -102,6 +96,8 @@
 - [iOS开发之 - 好玩的富文本](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20好玩的富文本.md)
 - [iOS开发之 - MD5加密](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发之%20-%20MD5加密.md)
 - [APP 被苹果 App Store 拒绝的N个原因](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/APP%20被苹果%20App%20Store%20拒绝的N个原因.md)
+- [模块化与解耦](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/模块化与解耦.md)
+- [iOS开发技巧 - UIViewController 基类设计](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发技巧%20-%20UIViewController%20基类设计.md)
 
 
 # Issue
