@@ -134,11 +134,13 @@
         make.bottom.equalTo(self.view).offset(-250);
     }];
 ```
+
 那我们就从 `mas_makeConstraints: ` 这个方法开始探寻 Masonry 的源码。上文说到，Masonry 中设置约束最常用的方法是
 
  ```
 /// 新增约束
 - (NSArray *)mas_makeConstraints:(void(NS_NOESCAPE ^)(MASConstraintMaker *make))block;
+
 ```
 
 同时，Masonry 还提供两个类方法用于更新和重建约束
@@ -650,7 +652,9 @@
         self.installedView = self.firstViewAttribute.view.superview;
     }
 ```
+
 加约束时我们要判断是否需要对约束进行更新，如果需要，就替换约束，如果不需要就直接添加约束即可。添加成功后我们将通过 mas_installedConstraints 属性记录一下本次添加的约束。
+
 ```
    /// 已经存在的约束
     MASLayoutConstraint *existingConstraint = nil;
@@ -669,5 +673,5 @@
     }
 ```
 
-<br></br>
+
 > 到此为止，对 [Masonry](https://github.com/SnapKit/Masonry)  源码的简单介绍已接近尾声了。。。[Masonry](https://github.com/SnapKit/Masonry)  的代码流程简单来讲就是提供给我们一个 MASConstraintMaker，然后我们根据 Masonry 提供的语法，添加约束。最后 Masonry 解析约束，将真正的约束关系添加到相应的视图上。

@@ -85,4 +85,4 @@ UIScrollViewDelegate 的这个代理方法与上面的一样。
 
 上面的两种方法都可以实现导航栏渐变，只是思路不同，一个是改变系统的导航栏，一个是在导航栏上插入 View，另外还可以自定义导航控制器这个类来实现，各位道友可以试试哦！
 
-####[代码传送门](https://github.com/liuzhongning/NNJaneBook) 欢迎各位道友交流或指出错误！
+#### [代码传送门](https://github.com/liuzhongning/NNJaneBook) 欢迎各位道友交流或指出错误！

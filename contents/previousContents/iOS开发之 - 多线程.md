@@ -132,7 +132,7 @@ NSThread *main = [NSThread mainThread];
 （3）自定义子类继承NSOperation,实现内部相应的⽅法
 
 下面是这三种方式创建线程的具体方法：
-####1.NSInvocationOperation
+#### 1.NSInvocationOperation
 
 ```objc
 - (void)invocationOperation

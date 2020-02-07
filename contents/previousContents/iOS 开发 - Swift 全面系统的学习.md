@@ -22,6 +22,7 @@
 --- 
 
 <br>
+
 **练习的 demo 地址：** https://github.com/liuzhongning/NNMintFurniture 
 
 
@@ -682,4 +683,5 @@ extension NNScanCodeController : UIImagePickerControllerDelegate , UINavigationC
 
 ---
 <br>
+
 ##### 详情代码，请移步到 https://github.com/liuzhongning/NNMintFurniture 中查看，如有疑问或有建议的地方，欢迎讨论。另外代码中有一个名为 `guide.swift` 的类，简单标出了代码的结构，更方便阅读。

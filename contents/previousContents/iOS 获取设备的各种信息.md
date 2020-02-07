@@ -274,4 +274,4 @@
 }
 ```
 
-####提示：上面代码如果直接复制的话有些会报错，这是因为需要导入头文件，详细代码请点击 [iOS 获取设备的各种信息](https://github.com/liuzhongning/NNDeviceInformation)。
+#### 提示：上面代码如果直接复制的话有些会报错，这是因为需要导入头文件，详细代码请点击 [iOS 获取设备的各种信息](https://github.com/liuzhongning/NNDeviceInformation)。
