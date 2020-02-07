@@ -4,7 +4,7 @@
 
 UIWebView 是苹果在 iOS 2 之后推出的，由于资格比较“老”，大家对 UIWebView 应该也不会陌生，这里直接上代码：
 
-###1.UIWebView 基本使用
+### 1.UIWebView 基本使用
 ```
     // 创建webview
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 20, NNWidth, NNHeight - 20)];
@@ -15,7 +15,7 @@ UIWebView 是苹果在 iOS 2 之后推出的，由于资格比较“老”，大
     // 添加到界面
     [self.view addSubview:webView];
 ```
-###2.UIWebView 常用方法
+### 2.UIWebView 常用方法
 ```
     [webView reload]; // 刷新
     [webView stopLoading]; // 停止加载
@@ -25,7 +25,7 @@ UIWebView 是苹果在 iOS 2 之后推出的，由于资格比较“老”，大
     [webView canGoForward]; // 是否可以向前
     [webView isLoading]; // 是否正在加载
 ```
-###3.UIWebView 相关代理协议
+### 3.UIWebView 相关代理协议
 ```
 #pragma mark - UIWebViewDelegate
 	/// 是否允许加载网页
@@ -48,7 +48,7 @@ UIWebView 是苹果在 iOS 2 之后推出的，由于资格比较“老”，大
 	    NSLog(@"网页加载错误时调用");
 	}
 ```
- ###这里是 UIWebView 的效果图！！！
+ ### 这里是 UIWebView 的效果图！！！
 
 
 ![UIWebView加载网页](http://upload-images.jianshu.io/upload_images/2665449-ab410b93f7c4d753.gif?imageMogr2/auto-orient/strip)
@@ -60,7 +60,7 @@ UIWebView 是苹果在 iOS 2 之后推出的，由于资格比较“老”，大
 ***
 **依然是先介绍 WKWebView 的基本使用**
 
-###1. WKWebView 基本使用
+### 1. WKWebView 基本使用
 >这里加一个不用提示的提示：WKWebView 和 UIWebview 的基本使用方法相类似，但是需要导入头文件 #import <WebKit/WebKit.h>，其它步骤如下
 
 ```
@@ -74,7 +74,7 @@ UIWebView 是苹果在 iOS 2 之后推出的，由于资格比较“老”，大
     [self.view addSubview:webView];
 ```
 ps:这里就不再补充效果图了，除了速度内存优于 UIWebView，显示的效果差不多。。。
-###2. WKWebView 加载文件 
+### 2. WKWebView 加载文件 
 
 ```
     // 创建webview
@@ -86,10 +86,10 @@ ps:这里就不再补充效果图了，除了速度内存优于 UIWebView，显�
     // 最后将webView添加到界面
     [self.view addSubview:webView];
 ```
-####这里是加载文件效果图！
+#### 这里是加载文件效果图！
 ![加载本地图片](http://upload-images.jianshu.io/upload_images/2665449-026af846596935f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###3. WKWebView 与 JS 代码交互
+### 3. WKWebView 与 JS 代码交互
 
 ```
 // 图片缩放的 JS 代码
@@ -107,10 +107,10 @@ ps:这里就不再补充效果图了，除了速度内存优于 UIWebView，显�
 
 ![与 JS 交互效果图](http://upload-images.jianshu.io/upload_images/2665449-311830759271b58f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-###4. WKWebView 常用的代理协议
+### 4. WKWebView 常用的代理协议
 
 *WKWebView 的代理方法还是蛮有趣的，大家可以试下哈！*
-####4.1 WKNavigationDelegate 协议
+#### 4.1 WKNavigationDelegate 协议
 这里简单罗列了几个常用的方法。以下四个与 UIWebView 中的方法相同：
 
 ```
@@ -150,7 +150,7 @@ ps:这里就不再补充效果图了，除了速度内存优于 UIWebView，显�
 }
 ```
 
-####4.2 WKUIDelegate 协议
+#### 4.2 WKUIDelegate 协议
 
 ```
 #pragma mark - WKUIDelegate
@@ -185,7 +185,7 @@ ps:这里就不再补充效果图了，除了速度内存优于 UIWebView，显�
 }
 ```
 
-###5.另外搜集了一些 WKWebView 常用的属性：
+### 5.另外搜集了一些 WKWebView 常用的属性：
 
 ```
 	•    WKBackForwardListItem: webview中后退列表里的某一个网页。

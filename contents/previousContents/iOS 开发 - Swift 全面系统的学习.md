@@ -2,7 +2,7 @@
 
 > 最近项目不算紧，于是就学了学 Swift ，看了一大神写的项目https://github.com/hrscy/DanTang，很受益，感谢开源！另外自己也写了一些基础代码，分享出来，第一是希望得到同行前辈的指导，第二是希望对需要的朋友有所帮助。
 
-#####先分享一些学习资料：
+##### 先分享一些学习资料：
 - 学习网站：
   - 苹果官方为开发者提供的 Swift 学习资源: https://developer.apple.com/swift/resources/
 
@@ -47,7 +47,7 @@
 > 练习 demo 的简单介绍，前方高能预警，大量图片请注意手机流量！
 
 
-####一、多页面滑动视图（分页控制器）
+#### 一、多页面滑动视图（分页控制器）
 
 ![多页面滑动视图](http://upload-images.jianshu.io/upload_images/2665449-32882dd38dd1bc87.gif?imageMogr2/auto-orient/strip)
 
@@ -104,7 +104,7 @@
 ```
 
 
-####二、图片轮播
+#### 二、图片轮播
 
 ![图片轮播](http://upload-images.jianshu.io/upload_images/2665449-0e923b9e52af87c1.gif?imageMogr2/auto-orient/strip)
 
@@ -132,7 +132,7 @@ extension NNItemTableViewController: NNShufflingFigureViewDelegate {
 ```
 
 
-####三、导航栏渐变
+#### 三、导航栏渐变
 ![导航栏渐变](http://upload-images.jianshu.io/upload_images/2665449-b6506cb5fab324c0.gif?imageMogr2/auto-orient/strip)
 
 - 核心代码
@@ -168,7 +168,7 @@ extension NNItemTableViewController {
     }
 }
 ```
-####四、瀑布流练习
+#### 四、瀑布流练习
 ![瀑布流练习](http://upload-images.jianshu.io/upload_images/2665449-c47f2e1053e05065.gif?imageMogr2/auto-orient/strip)
 
 - 核心代码
@@ -245,7 +245,7 @@ extension NNItemTableViewController {
     }
 ```
 
-####五、UIScrollView 练习
+#### 五、UIScrollView 练习
 
 ![UIScrollView 练习](http://upload-images.jianshu.io/upload_images/2665449-f96ca085518cc164.gif?imageMogr2/auto-orient/strip)
 
@@ -309,7 +309,7 @@ extension NNItemScrollView {
     }
 }
 ```
-####六、照相功能，更换头像（建议用真机）
+#### 六、照相功能，更换头像（建议用真机）
 ![照相功能，更换头像](http://upload-images.jianshu.io/upload_images/2665449-eedef65d59cce265.gif?imageMogr2/auto-orient/strip)
 
 - 核心代码
@@ -356,7 +356,7 @@ extension NNItemScrollView {
     }
 ```
 
-####七、二维码扫描及识别（建议用真机）
+#### 七、二维码扫描及识别（建议用真机）
 ![二维码扫描及识别](http://upload-images.jianshu.io/upload_images/2665449-2bdb11d7ef7db000.gif?imageMogr2/auto-orient/strip)
 
 
@@ -468,7 +468,7 @@ extension NNScanCodeController : UIImagePickerControllerDelegate , UINavigationC
     }
 }
 ```
-####八、随机图片验证码封装
+#### 八、随机图片验证码封装
 ![随机图片验证码封装](http://upload-images.jianshu.io/upload_images/2665449-7660d135f12c9d38.gif?imageMogr2/auto-orient/strip)
 
 - 核心代码
@@ -520,7 +520,7 @@ extension NNScanCodeController : UIImagePickerControllerDelegate , UINavigationC
 
 **OC版本：iOS开发 - 随机图片验证码封装-http://www.jianshu.com/p/936d2e06fd26**
 
-####九、圆形输入框封装
+#### 九、圆形输入框封装
 ![圆形输入框封装](http://upload-images.jianshu.io/upload_images/2665449-47ebc91140d2ea1c.gif?imageMogr2/auto-orient/strip)
 
 - 核心代码
@@ -592,7 +592,7 @@ extension NNScanCodeController : UIImagePickerControllerDelegate , UINavigationC
 **OC版本：iOS开发 - 圆形验证码(或密码)输入框的封装-http://www.jianshu.com/p/fce6bd4038eb**
 
 
-####十、第三方库 SnapKit 用法
+#### 十、第三方库 SnapKit 用法
 
 ![第三方库 SnapKit 用法](http://upload-images.jianshu.io/upload_images/2665449-5e2952f51add8ded.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -682,6 +682,4 @@ extension NNScanCodeController : UIImagePickerControllerDelegate , UINavigationC
 
 ---
 <br>
-#####详情代码，请移步到 https://github.com/liuzhongning/NNMintFurniture 中查看，如有疑问或有建议的地方，欢迎讨论。另外代码中有一个名为 `guide.swift` 的类，简单标出了代码的结构，更方便阅读。
-
-#####会持续更新......
+##### 详情代码，请移步到 https://github.com/liuzhongning/NNMintFurniture 中查看，如有疑问或有建议的地方，欢迎讨论。另外代码中有一个名为 `guide.swift` 的类，简单标出了代码的结构，更方便阅读。

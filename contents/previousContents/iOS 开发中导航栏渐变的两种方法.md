@@ -7,7 +7,7 @@
 ![导航栏渐变](http://upload-images.jianshu.io/upload_images/2665449-d8f9e18b30189a3b.gif?imageMogr2/auto-orient/strip)
 两种方法的核心代码：
 
-####一、设置 navigationBar 的 alpha
+#### 一、设置 navigationBar 的 alpha
 向上滑和向下滑时分别对 navigationBar 的透明度进行设置。
 
 ```
@@ -40,7 +40,7 @@
 这里要说明一点，**如果你不希望自己 navigationBar 上的按钮也被改变透明度，可以通过自定义 UINavigationController 实现。用系统的 navigationBar 时，navigationBar上的按钮的透明度也会被更改。**
 
 ---
-####二、在 navigationBar 上加入一个 view
+#### 二、在 navigationBar 上加入一个 view
 在 navigationBar 上加一个 view，然后设置 view 的 alpha。
 
 ```

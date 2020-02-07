@@ -2,7 +2,7 @@
 
 > 在项目开发中，所有控制器里面大概都有共同的属性，比如背景色、导航栏、tarBar 的设置等等，这时我们一般都会设计出来一个 **`UIViewController`** 的基类，通常叫做 **`baseViewController`**或**`rootViewController`**，在这个类里面设置所有控制器的共同的属性，然后项目中所有的控制器再继承自这个类。
 
-#####一般来说这种基类控制器里面需要做的操作有以下几个：
+##### 一般来说这种基类控制器里面需要做的操作有以下几个：
 
 - 为 APP 设置统一的背景色
 - 设置是否允许控制器自动调整高度（一般是 NO）
@@ -12,11 +12,11 @@
 当然还有其它的一些，毕竟这和项目的具体需求息息相关，因此还要因项目而异。我这里主要就列出基类控制器中基本的常用的一些需求，和大家分享下，希望能帮到需要的人，少走弯路；另外文章如果有不足之处，也希望各位同行能多多的交流指点。
 
 <br></br>
-####UIViewController 基类控制器设计步骤
+#### UIViewController 基类控制器设计步骤
 
-######首先创建一个 `UIViewController` 类，命名为 `NNBaseViewController`
+###### 首先创建一个 `UIViewController` 类，命名为 `NNBaseViewController`
 
-######接着在 `NNBaseViewController.m`中做一些操作
+###### 接着在 `NNBaseViewController.m`中做一些操作
 
 1.设置应用的统一背景色
 
@@ -122,8 +122,8 @@
 
 ---
 <br></br>
-####接下来是完整的代码：
-######NNBaseViewController.h
+#### 接下来是完整的代码：
+###### NNBaseViewController.h
 
 ```
 #import <UIKit/UIKit.h>
@@ -136,7 +136,7 @@
 @end
 ```
 
-######NNBaseViewController.m
+###### NNBaseViewController.m
 
 ```
 #import "NNBaseViewController.h"

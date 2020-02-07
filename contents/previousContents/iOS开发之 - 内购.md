@@ -2,10 +2,10 @@
 
 > 电商之类的 app 大多用的都是第三方支付（支付宝微信等支付），但是在某种特殊情况之下，我们却不得不使用内购。比如商品是在本 app 中使用和消耗的（游戏币游戏道具等），就一定要用内购，苹果强制的，否则会被拒绝上线。因此作为 iOS 开发者，不光要了解第三方支付，对内购也要有一定的认识！
 
-##一、什么是内购？
+## 一、什么是内购？
 内购是苹果推出的一种支付方式。说白了内购就是苹果获取利润的方式之一。如果我们使用第三方支付，只会支付少量的💰，但使用内购却要支付很多💰💰💰💰💰💰💰💰，要和苹果三七分帐（以前是四六分😢）。
 
-##二、内购产品的类别
+## 二、内购产品的类别
 
 官方的注释写的很清楚了，内购有五种产品类别，简介如下：
 - 非消耗品（Nonconsumable）
@@ -17,7 +17,7 @@
 - 自动续费订阅（Auto-renewing subscriptions）
 - 非自动续费订阅（Nonrenewing subscriptions）
 
-##三、苹果官方的内购流程
+## 三、苹果官方的内购流程
 
 ![内购流程](http://upload-images.jianshu.io/upload_images/2665449-0614b70007393038.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 - 白话文如下⬇️
@@ -38,7 +38,7 @@
 13. 服务器读取返回的数据，确定用户购买的内容。
 14. 服务器将购买的内容传递给程序。
 
-##四、代码实现
+## 四、代码实现
 4.1 项目的Bundle identifier需要与您申请AppID时填写的bundleID一致，不然会无法请求到商品信息。
 
 ![Bundle identifier](http://upload-images.jianshu.io/upload_images/2665449-4a5e5e9889d10179.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

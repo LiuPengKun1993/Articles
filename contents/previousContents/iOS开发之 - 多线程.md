@@ -12,7 +12,7 @@
 
 *下面我们开始了解 iOS 多线程的基础知识，如果在此之前对多线程已经有所了解的朋友，大可跳过这一部分，直接看后边三种多线程编程的 demo 即可！*
 
-##（一）iOS 开发之多线程 基础知识
+## （一）iOS 开发之多线程 基础知识
 
 ### 1.多线程简介:
 一个进程要想执行任务, 必须得有线程(每个进程至少要有一条线程), 线程是进程的基本执行单元, 一个进程（程序）的所有任务都在线程中执行.
@@ -23,29 +23,29 @@
 多线程并发(同时)执行, 其实是 CPU 快速地在多条线程之间调度.
 如果 CPU 调度线程的时间足够快,就造成了多线程并发执行的假象.
  
-###3.多线程的优缺点:
+### 3.多线程的优缺点:
  
-####多线程的优点:
+#### 多线程的优点:
 能适当提高程序的执行效率.
 能适当提高资源利用率(CPU、内存利用率).
  
-####多线程的缺点:
+#### 多线程的缺点:
 开启线程需要占用一定的内存空间(默认情况下，主线程占用1M，子线程占用512KB),如果开启大量的线程,会占用大量的内存空间,降低程序的性能.
  
-###4.多线程在 iOS 开发中的应用:
+### 4.多线程在 iOS 开发中的应用:
 
 主线程:一个 iOS 程序运行后，默认会开启1条线程，称为“主线程”或“ UI 线程”.
 主线程的主要作用:刷新 UI 界面、处理 UI 事件(比如点击事件、滚动事件、拖拽事件等).
  
 
-###5.iOS 中三种多线程编程的技术，分别是：
-###（一）NSThread
-###（二）Cocoa NSOperation
-###（三）GCD（全称：Grand Central Dispatch）
+### 5.iOS 中三种多线程编程的技术，分别是：
+### （一）NSThread
+### （二）Cocoa NSOperation
+### （三）GCD（全称：Grand Central Dispatch）
 
 这三种编程方式从上到下，抽象度层次是从低到高的，抽象度越高的使用越简单，也是Apple最推荐使用的。
 
-####三种方式的优缺点介绍：
+#### 三种方式的优缺点介绍：
 
 ##### NSThread:
 优点：NSThread 比其他两个轻量级
@@ -66,11 +66,11 @@ Grand Central Dispatch (GCD)是Apple开发的一个多核编程的解决方法�
 *对 iOS 基础知识有了一定了解之后，下边我们开始看多线程相关的一些 demo， 建议朋友们试试下边的 demo，这样更方便理解！如有疑问，或发现某些 demo 写的有误，还请朋友们告知！*
 
 **下边我们开始了解NSThread，NSThread 其实用的真不多，主要还是用另外两种，不过作为 iOS 开发者，还是应该对它有些了解的，下边是 NSThread 相关的 demo ！**
-##（二）iOS 开发之多线程 NSThread
+## （二）iOS 开发之多线程 NSThread
 
-###一、NSThread 初始化
+### 一、NSThread 初始化
 
-####1.动态方法
+#### 1.动态方法
 
 ```objc
 - (id)initWithTarget:(id)target selector:(SEL)selector object:(id)argument 
@@ -82,14 +82,14 @@ thread.name = @"MYThread";
 [thread start];
 ```
 
-####2.静态方法
+#### 2.静态方法
 ```objc
 + (void)detachNewThreadSelector:(SEL)aSelector toTarget:(id)aTarget withObject:(id)anArgument
 [NSThread detachNewThreadSelector:@selector(doSomething:) toTarget:self withObject:nil];   
 // 调用完毕后，会马上创建并开启新线程 
 ```
 
-####3.隐式创建线程的方法：
+#### 3.隐式创建线程的方法：
 ```objc
 - (void)performSelectorInBackground:(SEL)aSelector withObject:(id)arg;
 [self performSelectorInBackground:@selector(run) withObject:nil];  
@@ -97,7 +97,7 @@ thread.name = @"MYThread";
 
 **提示朋友们一下:第一种方式会直接创建线程并且开始运行线程，第二种方式是先创建线程对象，然后再运行线程操作，在运行线程操作前可以设置线程的优先级等线程信息**
 
-###二、线程间的通信
+### 二、线程间的通信
 ```objc
 //在主线程上执行操作
 [self performSelectorOnMainThread:@selector(run) withObject:nil waitUntilDone:YES];  
@@ -107,7 +107,7 @@ thread.name = @"MYThread";
 [self performSelector:@selector(run) onThread:thread withObject:nil waitUntilDone:YES]; 
 ```
 
-###三、一些简单方法
+### 三、一些简单方法
 ```objc
 //获取当前线程
 NSThread *thread = [NSThread currentThread];
@@ -121,9 +121,9 @@ NSThread *main = [NSThread mainThread];
 ---
 
 *NSThread  就说到这，一起再看下NSOperation， NSOperation 在开发中用的还是挺多的，虽然苹果建议使用 GCD ，但依然有开发者觉得 NSOperation  比 GCD 更好用！仁者见仁智者见智吧！本小白觉得如果能掌握还是都掌握的好！*
-##（三）iOS开发之多线程 NSOperation
+## （三）iOS开发之多线程 NSOperation
 
-###一、创建线程的方式
+### 一、创建线程的方式
 
 使用NSOperation创建线程的方式有3种:
 
@@ -148,7 +148,7 @@ NSThread *main = [NSThread mainThread];
 提示:默认情况下,调用了start方法后并不会开一条新线程去执行操作,只有将NSOperation放到一个NSOperationQueue中,才会异步执行操作.
 
 
-####2.NSBlockOperation
+#### 2.NSBlockOperation
 ```objc
 - (void)blockOperation
 {
@@ -171,7 +171,7 @@ NSThread *main = [NSThread mainThread];
 提示:只要NSBlockOperation封装的操作数 > 1,就会异步执行操作
 
 
-####3.自定义子类继承自NSOperation
+#### 3.自定义子类继承自NSOperation
 
 自定义NSOperation子类需要重写 - (void)main方法
 
@@ -199,11 +199,11 @@ NSThread *main = [NSThread mainThread];
 }
 ```
 
-###二、NSOperationQueue的应用
+### 二、NSOperationQueue的应用
 
 一个NSOperation对象可以通过调用start方法来执行任务,默认是同步执行的.也可以将NSOperation添加到一个NSOperationQueue中去执行,而且是异步执行的.
 
-####1.NSOperationQueue简单创建
+#### 1.NSOperationQueue简单创建
 ```objc
 //第一种方式
 - (void)operationQueue
@@ -246,7 +246,7 @@ NSThread *main = [NSThread mainThread];
 }
 ```
 
-####2.NSOperation中的操作依赖
+#### 2.NSOperation中的操作依赖
 NSOperation之间可以设置依赖来保证执行顺序,比如一定要让操作A执行完后,才能执行操作B,可以这么写[operationB addDependency:operationA]; // 操作B依赖于操作operationA,另外,通过removeDependency方法可以删除依赖对象.
 
 ```objc
@@ -279,7 +279,7 @@ NSOperation之间可以设置依赖来保证执行顺序,比如一定要让操�
 }
 ```
 
-####3.线程间的通信
+#### 3.线程间的通信
 ```objc
 #pragma mark - NSOperation实现线程间的通信
 - (void)NSOperationTest2 {
@@ -295,7 +295,7 @@ NSOperation之间可以设置依赖来保证执行顺序,比如一定要让操�
 }
 ```
 
-###三、一些简单方法
+### 三、一些简单方法
 ```objc
 // 取消单个操作  
 [operation cancel];  
@@ -312,33 +312,33 @@ queue.maxConcurrentOperationCount = 1;
 ```
 ---
 *NSOperation 常用的基本上也就上面那些了。。。GCD 就不用多说了，老东家苹果推荐的，不过我却觉得名字太长~~~，一开始总是记不住，多敲就好了！所有编程语言大概都有这么一个绝招O(∩_∩)O！*
-##（四）iOS开发之多线程 GCD
+## （四）iOS开发之多线程 GCD
 
-##一、GCD 术语
+## 一、GCD 术语
 要理解GCD ，我们先来熟悉与线程和并发相关的几个概念。
 
-####1.Serial vs. Concurrent 串行 vs. 并发
+#### 1.Serial vs. Concurrent 串行 vs. 并发
 任务串行执行就是每次只有一个任务被执行，任务并发执行就是在同一时间可以有多个任务被执行。
 
-####2.同步（Synchronous）与异步（Asynchronous）
+#### 2.同步（Synchronous）与异步（Asynchronous）
 同步，意味着在当前线程中执行任务，不具备开启新的线程的能力。
 异步，在新的线程中执行任务，具备开启新的线程的能力。
 
-####3.临界区（Critical Section）
+#### 3.临界区（Critical Section）
 就是一段代码不能被并发执行，即两个线程不能同时执行这段代码。
 
-####4.死锁（Deadlock）
+#### 4.死锁（Deadlock）
 停止等待事情的线程会导致多个线程相互维持等待，即死锁。
 
-####5.Thread Safe 线程安全
+#### 5.Thread Safe 线程安全
 线程安全的代码能在多线程或并发任务中被安全的调用，而不会导致任何问题（数据损坏，崩溃等）。
 
-####6.Queues 队列
+#### 6.Queues 队列
 GCD 提供有 dispatch queues 来处理代码块，这些队列管理你提供给 GCD 的任务并用 FIFO 顺序执行这些任务。
 
-###二、代码演示
+### 二、代码演示
 
-###1、dispatch_async(异步函数)
+### 1、dispatch_async(异步函数)
 
 ```objc
 //异步函数 + 并发队列:可以同时开启多条线程,任务是并行的
@@ -381,7 +381,7 @@ GCD 提供有 dispatch queues 来处理代码块，这些队列管理你提供�
     });
 ```
     
-####2、dispatch_sync(同步函数)
+#### 2、dispatch_sync(同步函数)
 
 ```objc
    //同步函数 + 并发队列:不会开启新的线程
@@ -424,7 +424,7 @@ dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAU
 });
 ```
     
-####3.两者在主队列中的应用
+#### 3.两者在主队列中的应用
 ```objc
     //异步函数 + 主队列：只在主线程中执行任务
     dispatch_queue_t queue = dispatch_get_main_queue();
@@ -462,7 +462,7 @@ dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAU
     });
 ```
   
-####4、dispatch_group_async的使用
+#### 4、dispatch_group_async的使用
 
 ```objc
 dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -489,7 +489,7 @@ dispatch_group_notify(group, dispatch_get_main_queue(), ^{
 });  
 ```
     
-####5、dispatch_barrier_async的使用
+#### 5、dispatch_barrier_async的使用
 
 ```objc
 dispatch_queue_t queue = dispatch_queue_create("YMWM", DISPATCH_QUEUE_CONCURRENT);   
@@ -513,7 +513,7 @@ dispatch_async(queue, ^{
 });
 ```
 
-####6、dispatch_apply的使用
+#### 6、dispatch_apply的使用
 ```objc
   //执行某个代码片段10次
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -522,7 +522,7 @@ dispatch_async(queue, ^{
     });
 ```
 
-####7、dispatch_once_t的使用
+#### 7、dispatch_once_t的使用
 第一个参数predicate，该参数是检查后面第二个参数所代表的代码块是否被调用的谓词，第二个参数则是在整个应用程序中只会被调用一次的代码块
 ```objc
 static dispatch_once_t onceToken;
@@ -531,7 +531,7 @@ static dispatch_once_t onceToken;
     });
 ```
    
-####8.dispatch_after的使用
+#### 8.dispatch_after的使用
 ```objc
   - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     NSLog(@"-------");
@@ -541,7 +541,7 @@ static dispatch_once_t onceToken;
    });
 }
 ```
-####9.线程间的通信
+#### 9.线程间的通信
 ```objc
 #pragma mark - GCD-线程间的通信
 - (void)downloadImage {
@@ -556,7 +556,7 @@ static dispatch_once_t onceToken;
 }
 ```
 
-####10.文件剪切
+#### 10.文件剪切
 ```objc
 //第一种方式
 	//将文件从from剪切至to
@@ -591,9 +591,9 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 
 
 
-###三、GCD与非GCD实现单粒设计模式
+### 三、GCD与非GCD实现单粒设计模式
 
-####1.GCD实现设计模式
+#### 1.GCD实现设计模式
 
 类的.h文件
 
@@ -642,7 +642,7 @@ static id _instance;
 @end
 ```
 
-####2.宏定义封装GCD单粒设计模式
+#### 2.宏定义封装GCD单粒设计模式
 通常当多个类之间有相同的属性和方法时，我们会考虑将相同的部分抽取出来，封装到父类中，但单粒模式不可以这样做，因为单粒模式采用继承方式的话，所有的类会共享一份内存。所以一般采取宏定义封装GCD单粒设计模式。注意，每行的结尾需要添加 "\"。
 
 ```objc
@@ -678,7 +678,7 @@ static id _instace; \
 ```
 
 
-####3.非GCD实现设计模式
+#### 3.非GCD实现设计模式
 类的.h文件
 
 ```objc
@@ -730,7 +730,7 @@ static id _instance;
 @end
 ```
 
-###四、GCD定时器
+### 四、GCD定时器
 
 ```objc
 @interface ViewController ()
@@ -765,13 +765,13 @@ static id _instance;
 ---
 
 *三种多线程编程都说完了，代码有些多，不过希望朋友们有所收获，另外再补充一些关于线程间通信的。。。*
-##（五）iOS开发之多线程 线程间的通信
-###一、简单介绍
+## （五）iOS开发之多线程 线程间的通信
+### 一、简单介绍
 在一个进程中，线程往往不是孤立存在的，多个线程之间需要经常进行通信。以下是线程之间进行通信的方法:
 
-###二、常用方法:
+### 二、常用方法:
 
-####代码1:performSelector
+#### 代码1:performSelector
 performSelector常用方法的常用方法主要有以下几种:
 
 ```objc
@@ -820,7 +820,7 @@ performSelector常用方法的常用方法主要有以下几种:
 //    self.imageView.image = image;
 //}
 ```
-####代码2:NSOperationQueue方式
+#### 代码2:NSOperationQueue方式
 
 一个NSOperation对象可以通过调用start方法来执行任务,默认是同步执行的.也可以将NSOperation添加到一个NSOperationQueue中去执行,而且是异步执行的.
 
@@ -837,7 +837,7 @@ performSelector常用方法的常用方法主要有以下几种:
 }
 ```
 
-####代码3:GCD方式
+#### 代码3:GCD方式
 GCD，全称Grand Central Dispath，是苹果开发的一种支持并行操作的机制。它的主要部件是一个FIFO队列和一个线程池，前者用来添加任务，后者用来执行任务。
 
 ```objc
@@ -859,7 +859,7 @@ dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     });
 ```
 
-###三、NSPort方法:
+### 三、NSPort方法:
 NSPort有3个子类，NSSocketPort、NSMessagePort、NSMachPort，但在iOS下只有NSMachPort可用。代码如下:
 
 UIViewController中的代码:

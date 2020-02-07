@@ -2,7 +2,7 @@
 
 > 在开发中，很多时候我们都会用到支付宝支付和微信支付，前段时间已经总结过[微信支付流程](http://www.jianshu.com/p/a17b37cb8fe3)，这里再说下支付宝支付（相对来说觉得支付宝有点坑），先说下支付宝支付的流程，如下图：
 
-###一、支付流程理解
+### 一、支付流程理解
 
 先看个图
 ![支付流程](http://upload-images.jianshu.io/upload_images/2665449-111551cb2f5ba892.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -16,7 +16,7 @@
 6.你们公司后台服务器收到后一般是更新下数据信息，手机支付宝客户端会显示一下支付成功。
 
 
-###二、支付流程详解
+### 二、支付流程详解
 1. 下载支付宝SDK
 [App支付DEMO&SDK](https://doc.open.alipay.com/docs/doc.htm?spm=a219a.7629140.0.0.B7TwKK&treeId=54&articleId=104509&docType=1)
 

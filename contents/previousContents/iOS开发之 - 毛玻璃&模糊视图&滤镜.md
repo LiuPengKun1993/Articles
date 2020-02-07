@@ -5,7 +5,7 @@
 ![CoreImage/CoreImage初窥](http://upload-images.jianshu.io/upload_images/2665449-6946c7d084d2e1ee.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 这篇文章主要演示了三种模糊效果，如下：
-####一、简单的毛玻璃效果：
+#### 一、简单的毛玻璃效果：
 - 原图
 ![原图](http://upload-images.jianshu.io/upload_images/2665449-cb2dfce94d622fc0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -67,7 +67,7 @@ button 被点击时调用以下代码：
     [self.view addSubview:self.imageView];
 ```
 
-####二、高斯模糊运动模糊等，先看效果图：
+#### 二、高斯模糊运动模糊等，先看效果图：
 - 原图
 
 ![原图](http://upload-images.jianshu.io/upload_images/2665449-954940694c6fed53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -95,7 +95,7 @@ viewDidLoad 中的代码和“简单的毛玻璃效果”中的 viewDidLoad 是�
     self.imageView.image= [UIImage imageWithCGImage:imageRef];
 ```
 
-####三、滤镜效果，先看下效果图
+#### 三、滤镜效果，先看下效果图
 
 - 原图
 ![原图](http://upload-images.jianshu.io/upload_images/2665449-503d38d5e10a65b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

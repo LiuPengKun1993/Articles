@@ -3,7 +3,7 @@
 > 想用 HTML 做个文字滚动效果，可以用特殊标签 marquee 实现，当然也可以用 JS 实现， 今天试了下用特殊标签 marquee 实现文字滚动。先声明下本人从事于 iOS 开发，之前零零星星的学过 HTML ，但目前尚处于小白阶段😂，因此文章如果有不当之处还请各位大神不吝指出！
 
 
-###先一起看下 marquee 标签存在哪些属性：
+### 先一起看下 marquee 标签存在哪些属性：
 - behavior：滚动方式，三种：scroll（循环滚动） slide（单次滚动）、alternate（来回滚动）
 - bgcolor：滚动文本框的背景颜色
 - direction：滚动方向，四种：left（从右到左）、right（从左到右）、up（从下到上）、down（从上到下）
@@ -16,9 +16,9 @@
 - hspace：水平方向的空白距离
 - vspace：垂直方向的空白距离
 
-###下面便是 marquee 属性的一些应用
+### 下面便是 marquee 属性的一些应用
 
-####一、滚动方式 behavior ：scroll（循环滚动）
+#### 一、滚动方式 behavior ：scroll（循环滚动）
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +38,7 @@
 
 ![循环滚动](http://upload-images.jianshu.io/upload_images/2665449-47605cbed1e7bf3a.gif?imageMogr2/auto-orient/strip)
 
-####二、滚动方式 behavior：alternate（来回滚动）
+#### 二、滚动方式 behavior：alternate（来回滚动）
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -58,7 +58,7 @@
 
 ![来回滚动](http://upload-images.jianshu.io/upload_images/2665449-2ef9e8f7f7097a05.gif?imageMogr2/auto-orient/strip)
 
-###三、滚动方向 direction：up（从下到上）
+### 三、滚动方向 direction：up（从下到上）
 
 ```
 <!DOCTYPE html>
@@ -78,7 +78,7 @@
 ```
 ![从下到上](http://upload-images.jianshu.io/upload_images/2665449-afc2adaff655f9b5.gif?imageMogr2/auto-orient/strip)
 
-###四、滚动方向 direction：left（从右到左）
+### 四、滚动方向 direction：left（从右到左）
 
 ```
 <!DOCTYPE html>
@@ -99,7 +99,7 @@
 
 ![从右到左](http://upload-images.jianshu.io/upload_images/2665449-59c59ad94d252736.gif?imageMogr2/auto-orient/strip)
 
-###五、滚动速度（scrollamount）
+### 五、滚动速度（scrollamount）
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -120,7 +120,8 @@
 
 ![滚动速度](http://upload-images.jianshu.io/upload_images/2665449-8c084cd3ab2119e7.gif?imageMogr2/auto-orient/strip)
 
-###六、循环次数（loop）
+### 六、循环次数（loop）
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -141,7 +142,7 @@
 ```
 ![循环次数](http://upload-images.jianshu.io/upload_images/2665449-1e7e0b115db0402f.gif?imageMogr2/auto-orient/strip)
 
-###七、当鼠标停留在文字上，文字停止滚动
+### 七、当鼠标停留在文字上，文字停止滚动
 
 ```
 <!DOCTYPE html>
@@ -165,7 +166,7 @@
 
 ![当鼠标停留在文字上，文字停止滚动](http://upload-images.jianshu.io/upload_images/2665449-a9a929dcfc80b834.gif?imageMogr2/auto-orient/strip)
 
-###八、给滚动字幕加超链接
+### 八、给滚动字幕加超链接
 
 ```
 <!DOCTYPE html>
@@ -190,7 +191,7 @@
 
 ![给滚动字幕加超链接](http://upload-images.jianshu.io/upload_images/2665449-5668ad5af1df16db.gif?imageMogr2/auto-orient/strip)
 
-###九、综合其它属性
+### 九、综合其它属性
 
 ```
 <!DOCTYPE html>

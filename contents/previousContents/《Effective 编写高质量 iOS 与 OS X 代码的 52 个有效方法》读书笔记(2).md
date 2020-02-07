@@ -1,11 +1,15 @@
 # iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(2)
 
-#####文章共分为三篇：
-第一篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(1)](https://www.jianshu.com/p/6985ec0666cb)
-第二篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(2)](https://www.jianshu.com/p/72b5525e82e3)
-第三篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(3)](https://www.jianshu.com/p/43fb6ccea4b2)
+##### 文章共分为三篇：
 
-接上篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(1)](https://www.jianshu.com/p/6985ec0666cb)
+
+第一篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(1)](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/《Effective%20编写高质量%20iOS%20与%20OS%20X%20代码的%2052%20个有效方法》读书笔记(1).md)
+
+第二篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(2)](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/《Effective%20编写高质量%20iOS%20与%20OS%20X%20代码的%2052%20个有效方法》读书笔记(2).md)
+
+第三篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(3)](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/《Effective%20编写高质量%20iOS%20与%20OS%20X%20代码的%2052%20个有效方法》读书笔记(3).md)
+
+接上篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(1)](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/《Effective%20编写高质量%20iOS%20与%20OS%20X%20代码的%2052%20个有效方法》读书笔记(1).md)
 
 ---
 
@@ -223,4 +227,4 @@ NSLog(@"object = %@", object);
 <br><br>
 
 ---
-下一篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(3)](https://www.jianshu.com/p/43fb6ccea4b2)
+下一篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(3)](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/《Effective%20编写高质量%20iOS%20与%20OS%20X%20代码的%2052%20个有效方法》读书笔记(3).md)

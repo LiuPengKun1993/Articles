@@ -2,14 +2,17 @@
 
 > **《Effective Objective-C 2.0: 编写高质量 iOS 与 OS X 代码的 52 个有效方法》是一本非常经典的 OC 书籍。这本书从语法、接口与 API 设计、内存管理、框架等 7 大方面总结和探讨了 OC 编程中的 52 个特性与陷阱，很值得读。**
 
-#####文章共分为三篇：
-第一篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(1)](https://www.jianshu.com/p/6985ec0666cb)
-第二篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(2)](https://www.jianshu.com/p/72b5525e82e3)
-第三篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(3)](https://www.jianshu.com/p/43fb6ccea4b2)
+##### 文章共分为三篇：
+
+第一篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(1)](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/《Effective%20编写高质量%20iOS%20与%20OS%20X%20代码的%2052%20个有效方法》读书笔记(1).md)
+
+第二篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(2)](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/《Effective%20编写高质量%20iOS%20与%20OS%20X%20代码的%2052%20个有效方法》读书笔记(2).md)
+
+第三篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(3)](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/《Effective%20编写高质量%20iOS%20与%20OS%20X%20代码的%2052%20个有效方法》读书笔记(3).md)
 
 
 
-#####文章目录：
+##### 文章目录：
 
 > 第 1 章：熟悉 OC
 第 2 章：对象、消息、运行期
@@ -507,4 +510,4 @@ NSMutableDictionary *dict = [NSMutableDictionary new];
 
 ---
 
-下一篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(2)](https://www.jianshu.com/p/72b5525e82e3)
+下一篇：[iOS 开发 -《Effective Objective-C 2.0:编写高质量 iOS 与 OS X 代码的 52 个有效方法》读书笔记(2)](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/《Effective%20编写高质量%20iOS%20与%20OS%20X%20代码的%2052%20个有效方法》读书笔记(2).md)

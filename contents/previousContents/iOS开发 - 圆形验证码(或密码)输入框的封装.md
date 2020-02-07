@@ -16,7 +16,7 @@
 - 创建一个 UITextField，用  UILabel 显示 UITextField 上输入的数字，需要监听文本的输入，同时对 UILabel 进行一些操作，再用 block 将输入的文本传出来。
 
 
-#####封装的圆形输入框主要实现了以下功能：输入框的数量、距离、颜色、大小等都可以自行设定，用起来也很方便，只需以下几行代码即可：
+##### 封装的圆形输入框主要实现了以下功能：输入框的数量、距离、颜色、大小等都可以自行设定，用起来也很方便，只需以下几行代码即可：
 
 ```
     NNValidationCodeView *view = [[NNValidationCodeView alloc] initWithFrame:CGRectMake(80, 100, 300, 45) andLabelCount:4 andLabelDistance:10];

@@ -5,7 +5,7 @@
 先说下这篇文章的大概内容，以便朋友们能够快速找到自己需要的。这篇文章主要介绍了三种网络请求的渠道，第一种是通过苹果自带的 NSURLSession 请求网络；第二种是通过 AFNetworking2.x 请求网络；最后一种是通过 AFNetworking3.0 请求网络。下边是这三种网络请求渠道的 demo.
 
 
-##一、苹果自带的请求网络方法：
+## 一、苹果自带的请求网络方法：
 这里介绍了三种，GET 请求、POST 请求、代理方式请求。
 
 1.GET 请求:
@@ -94,7 +94,7 @@ didReceiveResponse:(NSURLResponse *)response
 ```
 
 
-##二、AFNetworking2.x
+## 二、AFNetworking2.x
 
 1.GET 请求
 
@@ -121,7 +121,7 @@ didReceiveResponse:(NSURLResponse *)response
    }];
 ```  
       
-##三、AFNetworking3.0
+## 三、AFNetworking3.0
 
 1.GET 请求
 

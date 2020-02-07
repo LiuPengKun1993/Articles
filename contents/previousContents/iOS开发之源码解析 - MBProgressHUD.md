@@ -23,11 +23,11 @@
 <br></br>
 
 **begin~~~**
-##一、MBProgressHUD 核心 API
+## 一、MBProgressHUD 核心 API
 
 > 这一部分讲的主要是 MBProgressHUD 的一些属性方法等，主要是为了对 MBProgressHUD 先有个大概的认识
 
-####1.1 模式
+#### 1.1 模式
 首先来看看 [MBProgressHUD](https://github.com/jdg/MBProgressHUD) 中定义的枚举，`mode ` 一共有六种显示样式：
 
 ```
@@ -68,7 +68,7 @@ typedef NS_ENUM(NSInteger, MBProgressHUDMode) {
 
 <br></br>
 
-####1.2 动画效果
+#### 1.2 动画效果
 
 MBProgressHUD 在显示 HUD 窗口的时候，一般都伴随着动画效果，MBProgressHUD 中的动画效果也是一个枚举，如下：
 
@@ -87,7 +87,7 @@ typedef NS_ENUM(NSInteger, MBProgressHUDAnimation) {
 *这里先简单的罗列出来，下文中还会多次用到。*
 <br></br>
 
-####1.3 MBProgressHUD 组成
+#### 1.3 MBProgressHUD 组成
 `MBProgressHUD` 主要由四部分组成：**loading 动画视图**、**标题文本框**、**详情文本框**、**HUD 背景框**，如下图。
 
 
@@ -127,11 +127,11 @@ typedef NS_ENUM(NSInteger, MBProgressHUDAnimation) {
 -  button：添加点击事件
 <br></br>
 
-####1.4 MBProgressHUD 中的属性
+#### 1.4 MBProgressHUD 中的属性
 
 MBProgressHUD 文件中主要包括四个类，它们分别是 **MBProgressHUD**、**MBRoundProgressView**、 **MBBarProgressView**、 **MBBackgroundView**。这四个类各有各的用法，比如如果是进度条模式(MBProgressHUDModeDeterminateHorizontalBar)，则使用的是 `MBBarProgressView` 类；如果是饼图模式(MBProgressHUDModeDeterminate)或环形模式(MBProgressHUDModeAnnularDeterminate)，则使用的是 `MBRoundProgressView `类。下面是这四个类的相关属性。
 
-######1.41  MBProgressHUD 相关属性
+###### 1.41  MBProgressHUD 相关属性
 
 ```
 /// show 方法触发到显示 HUD 窗口的间隔时间，默认是 0
@@ -182,7 +182,7 @@ MBProgressHUD 文件中主要包括四个类，它们分别是 **MBProgressHUD**
 /// hud 窗口还可以加入button，添加事件
 @property (strong, nonatomic, readonly) UIButton *button;
 ```
-######1.42 MBRoundProgressView 相关属性
+###### 1.42 MBRoundProgressView 相关属性
 
 
 ```
@@ -201,7 +201,7 @@ MBProgressHUD 文件中主要包括四个类，它们分别是 **MBProgressHUD**
 /// 显示模式，NO = 圆形；YES = 环形。默认是 NO
 @property (nonatomic, assign, getter = isAnnular) BOOL annular;
 ```
-######1.43 MBBarProgressView 相关属性
+###### 1.43 MBBarProgressView 相关属性
 
 ```
 /// 进度条 (0.0 到 1.0)
@@ -217,7 +217,7 @@ MBProgressHUD 文件中主要包括四个类，它们分别是 **MBProgressHUD**
 @property (nonatomic, strong) UIColor *progressColor;
 ```
 
-######1.44 MBBackgroundView 相关属性
+###### 1.44 MBBackgroundView 相关属性
 
 ```
 /// 背景图层样式，有两种，iOS7 或者以上版本默认风格是MBProgressHUDBackgroundStyleBlur，其他为MBProgressHUDBackgroundStyleSolidColor，由于 iOS7 不支持 UIVisualEffectView，所以在 iOS7 和更高版本中会有所不同
@@ -228,9 +228,9 @@ MBProgressHUD 文件中主要包括四个类，它们分别是 **MBProgressHUD**
 ```
 <br></br>
 
-####1.5 MBProgressHUD 中的一些方法
+#### 1.5 MBProgressHUD 中的一些方法
 
-######1.51 类方法
+###### 1.51 类方法
 
 ```
 /// 创建一个 HUD 窗口，并把它显示在 view 上，还可以设置是否有动画
@@ -245,7 +245,7 @@ MBProgressHUD 文件中主要包括四个类，它们分别是 **MBProgressHUD**
 
 这三个类方法中，常用的是第一个函数`+ (instancetype)showHUDAddedTo:(UIView *)view animated:(BOOL)animated;`直接创建 HUD，并把它显示在 view 上，用起来极其方便
 
-######1.52 对象方法
+###### 1.52 对象方法
 
 ```
 /// 以view为基准创建初始化一个HUD对象，为HUD的初始化构造函数
@@ -265,7 +265,7 @@ MBProgressHUD 文件中主要包括四个类，它们分别是 **MBProgressHUD**
 
 <br></br>
 
-##二、show 系列方法
+## 二、show 系列方法
 
 > 这一部分主要是展示 HUD 窗口时调用的方法及代码分析
 
@@ -704,7 +704,7 @@ MBProgressHUD 文件中主要包括四个类，它们分别是 **MBProgressHUD**
 
 `- (void)animateIn:(BOOL)animatingIn withType:(MBProgressHUDAnimation)type completion:(void(^)(BOOL finished))completion` 这个方法，无论是处于 show 状态还是处于 hide 状态，都会调用，下边我们再一起看下 hide 系列的一些方法。
 
-##三、hide 系列方法
+## 三、hide 系列方法
 
 > 这一部分主要是隐藏 HUD 窗口时调用的方法及代码分析
 

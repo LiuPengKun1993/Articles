@@ -1,8 +1,8 @@
 # iOS 获取设备的各种信息
 
-#####[iOS 获取设备的各种信息](https://github.com/liuzhongning/NNDeviceInformation)
+##### [iOS 获取设备的各种信息](https://github.com/liuzhongning/NNDeviceInformation)
 
-###一、目录结构:
+### 一、目录结构:
 
 1. 获取屏幕宽度与高度
 2. 获取设备版本号
@@ -19,8 +19,8 @@
 13. 获取电池当前的状态（共有4种状态）
 14. 获取设备当前的语言
 
-###二、具体内容
-#####1. 获取屏幕宽度与高度
+### 二、具体内容
+##### 1. 获取屏幕宽度与高度
 
 ```
 /// 屏幕宽度
@@ -35,7 +35,7 @@
 ```
 ` [UIScreen mainScreen].bounds.size.width`用的很普遍，一般来说定义成宏更好，然后根据屏幕宽高进行尺寸的适配。
 
-#####2. 获取设备版本号
+##### 2. 获取设备版本号
 
 ```
 + (NSString *)getDeviceName {
@@ -106,7 +106,7 @@
 
 ```
 
-#####3. 获取iPhone名称
+##### 3. 获取iPhone名称
 ```
 /// 获取iPhone名称
 + (NSString *)getiPhoneName {
@@ -115,14 +115,16 @@
 ```
 获取的是你 iPhone 的名字。
 
-#####4. 获取app版本号
+##### 4. 获取app版本号
+
 ```
 /// 获取app版本号
 + (NSString *)getAPPVerion {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 ```
-#####5. 获取电池电量
+##### 5. 获取电池电量
+
 ```
 /// 获取电池电量
 + (CGFloat)getBatteryLevel {
@@ -130,28 +132,32 @@
 }
 ```
 这个方法获取电池电量不是很精确，下边会介绍一个获取精确电池电量的。
-#####6. 获取当前系统名称
+##### 6. 获取当前系统名称
+
 ```
 /// 当前系统名称
 + (NSString *)getSystemName {
     return [UIDevice currentDevice].systemName;
 }
 ```
-#####7. 获取当前系统版本号
+##### 7. 获取当前系统版本号
+
 ```
 /// 当前系统版本号
 + (NSString *)getSystemVersion {
     return [UIDevice currentDevice].systemVersion;
 }
 ```
-#####8. 获取通用的唯一识别码UUID
+##### 8. 获取通用的唯一识别码UUID
+
 ```
 /// 通用唯一识别码UUID
 + (NSString *)getUUID {
     return [[UIDevice currentDevice] identifierForVendor].UUIDString;
 }
 ```
-#####9. 获取当前设备IP
+##### 9. 获取当前设备IP
+
 ```
 // 获取当前设备IP
 + (NSString *)getDeviceIPAdress {
@@ -182,7 +188,8 @@
 }
 
 ```
-#####10. 获取总内存大小
+##### 10. 获取总内存大小
+
 ```
 /// 获取总内存大小
 + (long long)getTotalMemorySize {
@@ -190,7 +197,8 @@
 }
 ```
 
-#####11. 获取当前可用内存
+##### 11. 获取当前可用内存
+
 ```
 /// 获取当前可用内存
 + (long long)getAvailableMemorySize {
@@ -205,7 +213,8 @@
     return ((vm_page_size * vmStats.free_count + vm_page_size * vmStats.inactive_count));
 }
 ```
-#####12. 获取精准电池电量
+##### 12. 获取精准电池电量
+
 ```
 /// 获取精准电池电量
 + (CGFloat)getCurrentBatteryLevel {
@@ -237,7 +246,8 @@
 }
 ```
 上面这个方法是通过 runtime 获取电池电量控件类私有变量的值，较为精确。
-#####13. 获取电池当前的状态（共有4种状态）
+##### 13. 获取电池当前的状态（共有4种状态）
+
 ```
 /// 获取电池当前的状态，共有4种状态
 + (NSString *) getBatteryState {
@@ -254,7 +264,8 @@
     return nil;
 }
 ```
-#####14. 获取设备当前的语言
+##### 14. 获取设备当前的语言
+
 ```
 /// 获取当前语言
 + (NSString *)getDeviceLanguage {

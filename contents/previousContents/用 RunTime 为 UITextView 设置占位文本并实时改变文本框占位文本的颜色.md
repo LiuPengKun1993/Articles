@@ -6,7 +6,7 @@
 
 OK，足够了，接下来我们就抓紧时间来看看如何用 RunTime 为 UITextView 设置占位文本并实时改变文本框占位文本的颜色。。。
 
-#####首先我们利用 RunTime 获取一下 UITextView 中一些隐藏的成员变量
+##### 首先我们利用 RunTime 获取一下 UITextView 中一些隐藏的成员变量
 
 ```
 - (void)viewDidLoad {
@@ -29,7 +29,7 @@ OK，足够了，接下来我们就抓紧时间来看看如何用 RunTime 为 UI
 }
 ```
 
-#####打印结果如下（这里直接放截图）
+##### 打印结果如下（这里直接放截图）
 
 
 ![UITextView 中的属性](http://upload-images.jianshu.io/upload_images/2665449-065666a1bd7773b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -96,14 +96,14 @@ OK，足够了，接下来我们就抓紧时间来看看如何用 RunTime 为 UI
 
 到这里实时改变文本框占位文本的颜色也搞定了，是不是觉得很简单，先看下效果图（比较丑但很使用😂），文章结尾我会再次贴出完整的代码。。。自己以后看着方便，也可以帮助有需要的道友少走弯路，，不过文章如果有需要改正或改进的地方，还希望各位同行能多多指点。
 
-#####效果图
+##### 效果图
 
 
 ![为 UITextView 设置占位文本并实时改变文本框占位文本的颜色](http://upload-images.jianshu.io/upload_images/2665449-f89dfd4f1b745501.gif?imageMogr2/auto-orient/strip)
 
 
 <br></br>
-#####在需要 `UITextView`  的页面进行设置，`NNViewController.h` 中没有相关操作，直接在`NNViewController.m` 中进行设置即可，当然如果项目中用到 `UITextView` 这个类比较多的话，你也可以简单封装一下，以便多次利用。。。以下是全部代码
+##### 在需要 `UITextView`  的页面进行设置，`NNViewController.h` 中没有相关操作，直接在`NNViewController.m` 中进行设置即可，当然如果项目中用到 `UITextView` 这个类比较多的话，你也可以简单封装一下，以便多次利用。。。以下是全部代码
 ```
 #import "NNViewController.h"
 #import <objc/runtime.h>

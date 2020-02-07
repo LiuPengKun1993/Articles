@@ -19,15 +19,15 @@ GitHub 地址：[GitHub 地址](https://github.com/hackiftekhar/IQKeyboardManage
 
 
 --------
-###以下是 IQKeyboardManager 的一些具体使用
+### 以下是 IQKeyboardManager 的一些具体使用
 
-####1. 用 Cocoapod  导入或直接下载拖进去，这里方便起见直接用 Cocoapod 导入。
+#### 1. 用 Cocoapod  导入或直接下载拖进去，这里方便起见直接用 Cocoapod 导入。
 IQKeyboardManager 的 GitHub地址：[IQKeyboardManager 的 GitHub 地址](https://github.com/hackiftekhar/IQKeyboardManager)
-####2. 在 AppDelegate.m 中导入头文件 
+#### 2. 在 AppDelegate.m 中导入头文件 
 ```
 #import <IQKeyboardManager/IQKeyboardManager.h> 
 ```
-####3. 在 AppDelegate 中设置全局属性
+#### 3. 在 AppDelegate 中设置全局属性
 ```
  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
@@ -52,7 +52,7 @@ IQKeyboardManager 的 GitHub地址：[IQKeyboardManager 的 GitHub 地址](https
     return YES;
 }
 ```
-####4. 若某个类不需要使用 IQKeyboardManager，可以在这个类中这样设置
+#### 4. 若某个类不需要使用 IQKeyboardManager，可以在这个类中这样设置
 ```
   - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
@@ -64,7 +64,7 @@ IQKeyboardManager 的 GitHub地址：[IQKeyboardManager 的 GitHub 地址](https
   [IQKeyboardManager sharedManager].enable = YES;
 }
 ```
-####5. 常用属性介绍
+#### 5. 常用属性介绍
 
 - `sharedManager`：获取类库的单例变量
 - ` enable`：项目使用不使用 IQKeyboardManager 这个类库，当然，某些页面可以根据需要单独设置
@@ -76,7 +76,7 @@ IQKeyboardManager 的 GitHub地址：[IQKeyboardManager 的 GitHub 地址](https
 - `placeholderFont`：占位文字的字体大小
 - `keyboardDistanceFromTextField`：输入框距离键盘的距离
 
-####6. 再推荐几篇不错的相关文章
+#### 6. 再推荐几篇不错的相关文章
    - [iOS开发第三方库一 IQKeyboardManager](http://www.jianshu.com/p/01c0682003a9)
 
 - [自动处理键盘事件的第三方库 IQKeyboardManager](https://my.oschina.net/u/1418722/blog/384477)
