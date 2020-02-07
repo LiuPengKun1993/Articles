@@ -137,7 +137,7 @@
 
 那我们就从 `mas_makeConstraints: ` 这个方法开始探寻 Masonry 的源码。上文说到，Masonry 中设置约束最常用的方法是
 
- ```
+```
 /// 新增约束
 - (NSArray *)mas_makeConstraints:(void(NS_NOESCAPE ^)(MASConstraintMaker *make))block;
 
