@@ -80,7 +80,7 @@
 - [iOS开发 - 圆形验证码(或密码)输入框的封装](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发%20-%20圆形验证码(或密码)输入框的封装.md)
 - [iOS开发 - 仿简书个人主页多页面滑动视图](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS开发%20-%20仿简书个人主页多页面滑动视图.md)
 
-### 开发中遇到的小知识点
+### 开发中记录的其它知识点
 
 - [CALayer 及 CALayer 的 contents 系列属性](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/CALayer%20及%20CALayer%20的%20contents%20系列属性.md)
 - [iOS 开发中导航栏渐变的两种方法](https://github.com/liuzhongning/Articles/blob/master/contents/previousContents/iOS%20开发中导航栏渐变的两种方法.md)
