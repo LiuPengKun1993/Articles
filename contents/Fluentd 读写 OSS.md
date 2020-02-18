@@ -82,6 +82,8 @@ key_format "%{path}/%{time_slice}/aliyun_events_%{index}_%{thread_id}_1.%{file_e
 </match>
 ```
 
+最近增加了一个需求，上传 OSS 时生成小时级别文件夹。直接修改 `time_slice_format ` 的 `%Y%m%d` 为 `%Y%m%d%H` 即可，更多格式相关的配置可以参考文档：[https://docs.fluentd.org/configuration/format-section](https://docs.fluentd.org/configuration/format-section)
+
 #### 参考文档
 
 [fluentd 官方文档](https://docs.fluentd.org/installation/install-by-dmg)
