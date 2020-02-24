@@ -4,13 +4,7 @@
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/App-MVC-01.jpg)
 
 
-此系列文章是《App架构》的读书笔记及心得，主要详细讲解了以下五种最为主要的 app 设计模式：
-
-- Model-View-Controller (MVC)
-- Model-View-ViewModel+Coordinator (MVVM-C)
-- Model-View-Controller+ViewState (MVC+VS)
-- ModelAdapter-ViewBinder (MAVB)
-- Elm 架构 (The Elm Architecture, TEA)
+此系列文章是《App架构》的读书笔记及心得。
 
 ### 前言
 
@@ -57,4 +51,9 @@ MVVM 模式可以被看作是 MVC 的精密版本。两者的模式很相似：c
 ### 总结
 
 因为 MVVM-C 加入了额外的一层来进行管理，看起来是比 Cocoa MVC 模式更加复杂。不过，在实现的层级，如果开发人员能够始终如一地贯彻这个模式，代码会变得更简单一些。这里说的简单并不意味着容易，只有当你对常见的响应式代码变形熟悉以后，才不会对书写代码感到无从下手，才不会对调试问题感到懊恼沮丧。不过，从令人高兴的一面来说，精心设计的数据管道通常不容易产生错误，在长期来看维护也更容易一些。
+
+相关文章:
+
+- [MVC 下的网络层架构](https://github.com/liuzhongning/Articles/blob/master/contents/MVC%20下的网络层架构.md)
+- [Model-View-Controller (MVC)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-Controller%20(MVC).md)
 

@@ -4,13 +4,7 @@
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/App-MVC-01.jpg)
 
 
-此系列文章是《App架构》的读书笔记及心得，主要详细讲解了以下五种最为主要的 app 设计模式：
-
-- Model-View-Controller (MVC)
-- Model-View-ViewModel+Coordinator (MVVM-C)
-- Model-View-Controller+ViewState (MVC+VS)
-- ModelAdapter-ViewBinder (MAVB)
-- Elm 架构 (The Elm Architecture, TEA)
+此系列文章是《App架构》的读书笔记及心得。
 
 ### 前言
 
@@ -65,6 +59,11 @@ MVC 有其优点，它是 iOS 开发中阻力最低的架构模式。Cocoa 中�
 MVC 是最常用的一种模式，它有很多优点，但也有其弊端。我们所需要做的，是解决其 Controller 臃肿的问题，通过抽取代码，将原本 MVC 设计模式中的 ViewController 进一步拆分，构造出 网络请求层、ViewModel 层、Service 层等其它类，来配合 Controller 工作，从而使 Controller 更加简单，从而使我们的 App 更容易维护。
 
 ---
+
+相关文章:
+
+- [Model-View-ViewModel+协调器 (MVVM-C)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-ViewModel%2B协调器%20(MVVM-C).md)
+- [MVC 下的网络层架构](https://github.com/liuzhongning/Articles/blob/master/contents/MVC%20下的网络层架构.md)
 
 
 这里是我之前写的一个 MVC 相关的 demo：[瘦身后的 MVC](https://github.com/liuzhongning/NNLearn/tree/master/009.MVCDemo)

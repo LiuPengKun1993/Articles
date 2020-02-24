@@ -4,13 +4,7 @@
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/App-MVC-01.jpg)
 
 
-此系列文章是《App架构》的读书笔记及心得，主要详细讲解了以下五种最为主要的 app 设计模式：
-
-- Model-View-Controller (MVC)
-- Model-View-ViewModel+Coordinator (MVVM-C)
-- Model-View-Controller+ViewState (MVC+VS)
-- ModelAdapter-ViewBinder (MAVB)
-- Elm 架构 (The Elm Architecture, TEA)
+此系列文章是《App架构》的读书笔记及心得。
 
 ### 前言
 
@@ -57,3 +51,8 @@ View controller 中所添加的唯一的职责是开始加载数据 (比如下�
 View controller 中的网络代码通常会被认为是反模式的，不过，原则上来说，如果网络过来的数据只作为本地 view state 使用，而不需要与其他部件进行通讯时，在 controller 里写网络代码并不是什么问题。如果我们可以把大块的网络代码正确地提取到辅助函数中去，这种方式甚至不会使我们的 view controller 臃肿很多。
 
 真正关键的问题是，这些数据会需要被共享吗？一旦数据需要被共享，model 拥有网络就编程了天然的选择：由于数据是由 controller 层以外的实体所拥有，它将能够很容易地在整个 app 中进行共享，而不会遭遇数据不一致的问题。
+
+相关文章:
+
+- [Model-View-ViewModel+协调器 (MVVM-C)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-ViewModel%2B协调器%20(MVVM-C).md)
+- [Model-View-Controller (MVC)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-Controller%20(MVC).md)
