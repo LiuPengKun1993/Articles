@@ -16,12 +16,12 @@
 
 建议先安装 brew，终端输入 `brew -v` 查看是否安装了 homebrew，如没安装，可根据 [homebrew 官网](https://brew.sh) 说明进行安装；如已安装，执行 `brew install npm ` 与 `brew install node`，接着查看是否安装成功：
 
-![]()
+![](https://github.com/liuzhongning/Articles/blob/master/resources/hybrid-app/hybrid01.jpg)
 
 #### 2.安装 ionic 和 cordova
 输入命令行 `npm install -g cordova ionic`，如果安装不了，可以试试国内镜像安装，首先安装 cnpm，执行 `npm install -g cnpm --registry=https://registry.npm.taobao.org` 命令安装。然后执行命令 `cnpm install -g cordova ionic` 安装 ionic 和 cordova，接着查看是否安装成功：
 
-![]()
+![](https://github.com/liuzhongning/Articles/blob/master/resources/hybrid-app/hybrid02.jpg)
 
 ### 创建 Ionic 工程
 
@@ -43,7 +43,7 @@ ionic start ionic-test-App sidemenu
 
 终端执行 `ionic serve` 在浏览器打开该项目：
 
-![]()
+![](https://github.com/liuzhongning/Articles/blob/master/resources/hybrid-app/hybrid03.jpg)
 
 #### 2. 创建安卓应用
 
@@ -56,7 +56,7 @@ $ ionic cordova emulate android
 
 需打开 Android Studio，并打开模拟器，不然最后一步 `ionic cordova emulate android` 会报错找不到模拟器。最后运行如下：
 
-![]()
+![](https://github.com/liuzhongning/Articles/blob/master/resources/hybrid-app/hybrid04.jpg)
 
 #### 3. 创建 iOS 应用
 
@@ -69,7 +69,7 @@ $ ionic cordova emulate ios
 
 如果出现 `ios-sim was not found` 错误，可以执行命令：`npm install -g ios-sim`。最后运行如下：
 
-![]()
+![](https://github.com/liuzhongning/Articles/blob/master/resources/hybrid-app/hybrid05.jpg)
 
 ---
 
