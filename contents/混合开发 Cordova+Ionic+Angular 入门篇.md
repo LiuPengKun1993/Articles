@@ -61,7 +61,7 @@ $ ionic cordova emulate android
 #### 3. 创建 iOS 应用
 
 ```
-$ cd myApp
+$ cd ionic-test-App
 $ ionic cordova platform add ios
 $ ionic cordova build ios
 $ ionic cordova emulate ios
