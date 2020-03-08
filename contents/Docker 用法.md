@@ -1,5 +1,12 @@
 # Docker 用法
 
+
+> Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。
+Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。
+容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。
+
+下面是 Docker 的一些常见用法：
+
 ### 拉取镜像
 
 ```
@@ -68,3 +75,6 @@ $ docker rmi $(docker images | grep "none" | awk '{print $3}')
 `docker images` 会查看所有的镜像；`grep "none"` 命令会筛选所有名字包括 `none` 以及标签为 `none` 的镜像；`awk '{print $3}'` 会处理筛选后的文本，打印所有镜像 `id` 的内容。
 
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/Docker/docker02.jpg)
+
+
+学习资料：https://www.runoob.com/docker/docker-tutorial.html
