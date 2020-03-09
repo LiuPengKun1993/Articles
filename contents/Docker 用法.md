@@ -60,7 +60,7 @@ sudo docker restart 镜像id
 ### 通过 ID 删除镜像
 
 ```
-docker rmi ee7cbd482336
+docker rmi 镜像id
 ```
 
 ### Docker 批量删除镜像
@@ -76,5 +76,12 @@ $ docker rmi $(docker images | grep "none" | awk '{print $3}')
 
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/Docker/docker02.jpg)
 
+#### 问题汇总
+
+1.报错 `Error response from daemon: conflict: unable to delete 4a67b006c338 (cannot be forced) - image is being used by running container 451b7b600276`
+
+解决方法：使用 `docker rmi -f 镜像id` 进行删除
+
+---
 
 学习资料：https://www.runoob.com/docker/docker-tutorial.html
