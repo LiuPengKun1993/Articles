@@ -89,7 +89,6 @@ code-push deployment rename <appName> <currentDeploymentName> <newDeploymentName
 - code push github:[https://github.com/Microsoft/cordova-plugin-code-push](https://github.com/Microsoft/cordova-plugin-code-push)
 - code push官网：[http://microsoft.github.io/code-push/](http://microsoft.github.io/code-push/)
 - code push cli手册：[http://microsoft.github.io/code-push/docs/cli.html](http://microsoft.github.io/code-push/docs/cli.html)
-- code push javaScript Api: [https://github.com/Microsoft/react-native-code-push/blob/master/docs/api-js.md#codepush](https://github.com/Microsoft/react-native-code-push/blob/master/docs/api-js.md#codepush)
 
 #### 参考的博客：
 
