@@ -1,6 +1,6 @@
 # Cordova 使用 App Center 进行热更新
 
-> App Center 是微软开发的云服务器，通过它，开发者可以直接在用户的设备上部署手机应用更新。首先你应该注册一个 App Center 帐户，或通过 [https://appcenter.ms](https://appcenter.ms) 登录到现有的 App Center 帐户。
+> App Center 是微软开发的云服务器，通过它，开发者可以直接在用户的设备上部署手机应用更新。首先注册一个 App Center 帐户，或通过 [https://appcenter.ms](https://appcenter.ms) 登录到现有的 App Center 帐户。
 
 ### 常用应用技巧
 
@@ -28,12 +28,13 @@ code-push release-cordova MyGroup/MyAndroid android -m -d "Production" --des “
 ```
 
 #### 查看部署
+部署成功后，输入以下命令行，查看部署状态：
 
 ```
 appcenter codepush deployment list -a MyGroup/MyAndroid
 ```
 
-![](/Users/pengqianqian/Desktop/GitHub/Articles/resources/appcenter/appcenter01.jpg)
+![](https://github.com/liuzhongning/Articles/blob/master/resources/appcenter/appcenter01.jpg)
 
 #### 查看所有发布的版本
 
@@ -47,7 +48,7 @@ code-push deployment h MyGroup/MyAndroid Production
 
 ### code-push 命令大全
 
-![](/Users/pengqianqian/Desktop/GitHub/Articles/resources/appcenter/appcenter02.jpg)
+![](https://github.com/liuzhongning/Articles/blob/master/resources/appcenter/appcenter02.jpg)
 
 ```
 // 安装
