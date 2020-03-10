@@ -2,7 +2,7 @@
 
 > App Center 是微软开发的云服务器，通过它，开发者可以直接在用户的设备上部署手机应用更新。首先注册一个 App Center 帐户，或通过 [https://appcenter.ms](https://appcenter.ms) 登录到现有的 App Center 帐户。
 
-### 常用应用技巧
+### 常用技巧
 
 #### 安装 code-push CLI
 
