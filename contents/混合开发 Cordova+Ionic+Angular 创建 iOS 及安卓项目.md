@@ -1,4 +1,4 @@
-# 混合开发 Cordova+Ionic+Angular 入门篇
+# 混合开发 Cordova+Ionic+Angular 创建 iOS 及安卓项目
 
 ### 前言
 
