@@ -1,6 +1,8 @@
 # Cordova 使用 App Center 进行热更新
 
-> App Center 是微软开发的云服务器，通过它，开发者可以直接在用户的设备上部署手机应用更新。首先注册一个 App Center 帐户，或通过 [https://appcenter.ms](https://appcenter.ms) 登录到现有的 App Center 帐户。
+> App Center 是微软开发的云服务器，通过它开发者可以直接在用户的设备上部署手机应用更新。
+> 
+> 使用方法：首先注册一个 App Center 帐户，或通过 [https://appcenter.ms](https://appcenter.ms) 登录到现有的 App Center 帐户，项目需要安装的插件及代码配置可以直接参考官方文档：[Apache Cordova入门](https://docs.microsoft.com/en-us/appcenter/sdk/getting-started/cordova)。
 
 ### 常用技巧
 
@@ -12,11 +14,7 @@ npm install -g code-push-cli
 ode-push login 
 ```
 
-#### 创建 App
-
-```
-appcenter apps create -d <appDisplayName> -o <operatingSystem>  -p <platform>
-```
+login 时会打开浏览器，选择账号登录，在命令行粘贴 token，回车即可登录。
 
 #### 创建部署
 
@@ -28,7 +26,7 @@ code-push release-cordova MyGroup/MyAndroid android -m -d "Production" --des “
 ```
 
 #### 查看部署
-部署成功后，输入以下命令行，查看部署状态：
+部署成功后，输入以下命令行，查看部署状态，比如有多少触发了热更新等等：
 
 ```
 appcenter codepush deployment list -a MyGroup/MyAndroid
@@ -37,6 +35,7 @@ appcenter codepush deployment list -a MyGroup/MyAndroid
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/appcenter/appcenter01.jpg)
 
 #### 查看所有发布的版本
+下面两句命令可以查看所有历史热更新的版本：
 
 ```
 // 测试环境
@@ -55,7 +54,7 @@ code-push deployment h MyGroup/MyAndroid Production
 npm install -g code-push-cli
 // 注册账号
 code-push register
-// 登陆(会打开浏览器，选择账号登录，在命令行粘贴token，回车即可登录)
+// 登陆
 code-push login
 // 注销
 code-push logout
