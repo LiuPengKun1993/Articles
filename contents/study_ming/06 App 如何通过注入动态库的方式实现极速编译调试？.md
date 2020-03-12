@@ -4,36 +4,37 @@
 > 
 > 戴铭老师的 GitHub：[ming1016](https://github.com/ming1016)
 
-### 05 链接器：符号是怎么绑定到地址上的？
+### 06 App 如何通过注入动态库的方式实现极速编译调试？
 
-#### 编译器和解释器
+在这一节，为了提高编译速度从而提高开发效率，戴铭老师推荐了一个神器 Injection，利用这个神器，可以像开发 JS 一样，只 command + s 一下就可以查看更改效果。这里是 GitHub 地址：[https://github.com/johnno1962/InjectionIII](https://github.com/johnno1962/InjectionIII)
 
-iOS 编写的代码是使用编译器将代码编译成机器码，直接在 CPU 上运行机器码。
 
-- 编译器优点是执行效率高，缺点是调试周期长。
-- 解释器优点是方便调试，缺点是执行效率低。
+#### 在 App Store 搜索下载这个工具
 
-#### iOS的编译器
+#### 在工程的 AppDelegate.m 中加入代码：
 
-iOS 使用的编译器是 LLVM。编译器会将每个文件都编译成 Mach-O(可执行文件)，其内置链接器 lld 会将项目中的多个 Mach-O 合并成一个。
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    #if DEBUG
+        
+        [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+        
+    #endif
+    // Override point for customization after application launch.
+    return YES;
+}
+```
 
-编译的几个主要过程：
+#### 选择模拟器运行程序（目前只能在模拟器里面使用），当程序加载完成后如果没选择工程路径的话会弹出一个选择工程目录的对话框，选择工程的目录就行了。
 
-- LLVM 预处理代码，比如将宏嵌入到对应的位置。
-- LLVM 对代码进行词法分析和语法分析，生成 AST(抽象语法树)。AST 结构更简单，遍历更快，而且可以快速生成 IR。
-- 最后 AST 生成 IR(一种更接近于机器码的语言)，IR可以生成多份适合不同平台的机器码。对于 iOS 来说，IR 生成的机器码是 Mach-O。
+#### 在任意使用的 OC 类的 .m 文件里面添加方法
 
-#### 编译时链接器做了什么
+```
+- (void)injected {
+	NSLog(@"此处的代码写完之后，按下Ctrl+S保存一下就可以在模拟器里看到刚刚改的代码了");
+    self.view.backgroundColor = [UIColor orangeColor];
+}
+```
 
-- 将变量、函数符号和其地址绑定起来。
-- 将多个 Mach-O 文件合成一个。
 
-#### 动态库链接
-
-静态库是编译时链接的库，会链接到Mach-O文件中。动态库是运行时链接的库，使用dyld实现动态加载。
-
-dyld做了哪些事：
-
-- 先执行 Mach-O 文件，根据 Mach-O 文件里 undefined符号加载对应的动态库，系统会设置一个共享缓存来解决递归依赖问题。
-- 加载后，将 undefined 的符号绑定到动态库里对应的地址上。
-- 最后再处理 +load 方法，main 函数返回后运行 static terminator。
+戴铭老师讲解了其工作原理，有需要了解的可以点击[《iOS开发高手课》](https://time.geekbang.org/column/intro/161?code=PbktFs%2Fw7EHB9TJpCcw1bc9KoCR%2FYLnpUmqrB0uOruk%3D)。
