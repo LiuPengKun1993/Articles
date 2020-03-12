@@ -7,3 +7,4 @@
 ### 学习笔记目录：
 #### [02 App 启动速度怎么做优化与监控？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/02%20App%20启动速度怎么做优化与监控？.md)
 #### [03 Auto Layout 是怎么进行自动布局的，性能如何？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/03%20Auto%20Layout%20是怎么进行自动布局的，性能如何？.md)
+#### [04 项目大了人员多了，架构怎么设计更合理？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/04%20项目大了人员多了，架构怎么设计更合理？.md)
