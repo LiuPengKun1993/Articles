@@ -11,3 +11,5 @@
 #### [05 链接器：符号是怎么绑定到地址上的？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/05%20链接器：符号是怎么绑定到地址上的？.md)
 #### [06 App 如何通过注入动态库的方式实现极速编译调试？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/06%20App%20如何通过注入动态库的方式实现极速编译调试？.md)
 #### [07 Clang、Infer 和 OCLint ，我们应该使用谁来做静态分析？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/07%20Clang、Infer%20和%20OCLint%20，我们应该使用谁来做静态分析？.md)
+#### [08 如何利用 Clang 为 App 提质？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/08%20如何利用%20Clang%20为%20App%20提质？.md)
+#### [09 无侵入的埋点方案如何实现？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/09%20无侵入的埋点方案如何实现？.md)
