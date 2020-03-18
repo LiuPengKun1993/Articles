@@ -102,6 +102,11 @@ function __uploadOss() {
   }
 ```
 
+
+> 2020.03.18补充：
+> 
+> 如果遇到了跨域问题，大致报类似的错误，`Access to XMLHttpRequest at 'XXX' from origin 'XX' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present....`，这时我们可以在 oss 的 bucket 下配置一下跨域设置，这里有个文档可以帮助你了解跨域：[设置跨域资源共享](https://help.aliyun.com/document_detail/31870.html?spm=5176.8466032.0.0.14f81450mpclwz)，这里有个小视频可以帮助你解决跨域问题：[对象存储OSS-跨域访问（CORS）](https://help.aliyun.com/video_detail/39695.html?spm=5176.10695662.1996646101.searchclickresult.57e38ed9lIB4aQ)。
+
 结束语：
 本人本职工作是 iOS，前端只是前段时间因工作需要做了几个月，搞定了这个需求之后的感觉是，JS 的表单格式上传比 iOS 简单很多。如果哪里写的有问题，欢迎各位童鞋多多指教。
 
