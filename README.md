@@ -16,6 +16,7 @@
 | Architecture | [Model-View-Controller (MVC)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-Controller%20(MVC).md) <br> [MVC 下的网络层架构](https://github.com/liuzhongning/Articles/blob/master/contents/MVC%20下的网络层架构.md) <br> [Model-View-ViewModel+协调器 (MVVM-C)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-ViewModel%2B协调器%20(MVVM-C).md)|
 | Performance | [浅谈 iOS 性能优化](https://github.com/liuzhongning/Articles/blob/master/contents/浅谈%20iOS%20性能优化.md)|
 | Swift | [Swift30](https://github.com/liuzhongning/Swift30)|
+| iOS 进阶 | [《iOS开发高手课》 -- 戴铭](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming.md)|
 | iOS Database | [iOS 表单格式上传 OSS](https://github.com/liuzhongning/Articles/blob/master/contents/iOS%20表单格式上传%20OSS.md)|
 | Hybrid APP | [混合开发 Cordova+Ionic+Angular 创建 iOS 及安卓项目](https://github.com/liuzhongning/Articles/blob/master/contents/混合开发%20Cordova%2BIonic%2BAngular%20创建%20iOS%20及安卓项目.md) <br> [Cordova 使用 App Center 进行热更新](https://github.com/liuzhongning/Articles/blob/master/contents/Cordova%20使用%20App%20Center%20进行热更新.md) |
 | JS| [JS 表单格式直传 OSS](https://github.com/liuzhongning/Articles/blob/master/contents/JS%20表单格式直传%20OSS.md)|
