@@ -14,7 +14,7 @@ Instruments的功能非常强大，比如说Energy Log就是用来监控耗电�
 
 关于 Instruments 的各种性能检测工具，戴铭老师总结了一个很棒的图：
 
-![](/Users/pengqianqian/Desktop/GitHub/Articles/resources/study_ming/study_ming_Instruments.jpg)
+![](https://github.com/liuzhongning/Articles/blob/master/resources/study_ming/study_ming_Instruments.jpg)
 
 开发人员还可以使用 Instruments 10 还可以开发一款自定义 Instruments 工具。创建自定义 Instruments 工具可参考：[WWDC 2018：创建自定义的 Instrument](https://juejin.im/post/5b1cd1025188257d72709d7f)。
 
