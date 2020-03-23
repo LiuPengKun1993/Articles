@@ -103,5 +103,5 @@ UIImage *diskImage = [self diskImageForKey:key]; if (diskImage && self.shouldCac
 #### 推荐博客
 
 - [Energy Efficiency Guide for iOS Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/MonitorEnergyWithInstruments.html)
-- [Writing Energy Efficient Apps - 2017 - 238](https://developer.apple.com/videos/play/wwdc2017/238/)
+- [Writing Energy Efficient Apps - WWDC 2017 238](https://developer.apple.com/videos/play/wwdc2017/238/)
 - [iOS 电量消耗改善：一招套路及相关姿势](https://juejin.im/post/5bfce9305188255362443ac5)
