@@ -20,3 +20,5 @@
 #### [14 临近OOM，如何获取详细内存分配信息，分析内存问题](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/14%20临近OOM，如何获取详细内存分配信息，分析内存问题.md)
 #### [15 日志监控：怎样获取App中的全量日志？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/15%20日志监控：怎样获取App中的全量日志？.md)
 #### [16 性能监控：衡量App质量的那把尺](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/16%20性能监控：衡量App质量的那把尺.md)
+#### [17 远超你想象的多线程的那些坑](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/17%20远超你想象的多线程的那些坑.md)
+#### [18 怎么减少App电量消耗？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/18%20怎么减少App电量消耗？.md)
