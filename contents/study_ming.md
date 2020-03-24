@@ -24,3 +24,5 @@
 #### [18 怎么减少App电量消耗？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/18%20怎么减少App电量消耗？.md)
 #### [19 热点问题答疑（二）：基础模块问题答疑](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/19%20热点问题答疑（二）：基础模块问题答疑.md)
 #### [21 除了Cocoa，iOS还可以用哪些GUI框架开发？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/21%20除了Cocoa，iOS还可以用哪些GUI框架开发？.md)
+#### [22 细说iOS响应式框架变迁，哪些思想可以为我所用？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/22%20细说iOS响应式框架变迁，哪些思想可以为我所用？.md)
+#### [23 如何构造酷炫的物理效果和过场动画效果？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/23%20如何构造酷炫的物理效果和过场动画效果？.md)
