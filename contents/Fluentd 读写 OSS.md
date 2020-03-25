@@ -82,13 +82,23 @@ key_format "%{path}/%{time_slice}/aliyun_events_%{index}_%{thread_id}_1.%{file_e
 </match>
 ```
 
-最近增加了一个需求，上传 OSS 时生成小时级别文件夹。直接修改 `time_slice_format ` 的 `%Y%m%d` 为 `%Y%m%d%H` 即可，更多格式相关的配置可以参考文档：[https://docs.fluentd.org/configuration/format-section](https://docs.fluentd.org/configuration/format-section)
+- 2020.02.18 补充
+	- 最近增加了一个需求，上传 OSS 时生成小时级别文件夹。直接修改 `time_slice_format ` 的 `%Y%m%d` 为 `%Y%m%d%H` 即可，更多格式相关的配置可以参考文档：[https://docs.fluentd.org/configuration/format-section](https://docs.fluentd.org/configuration/format-section)
+
+
+
+- 2020.03.25 补充：
+	- 最近我们部门测试组在测试 Fluentd 日志合并时，出现了这样一个问题：在日志量特别大的情况下，Fluentd 会进行重复合并，比如原始日志有 10000 条，Fluentd 合并后会有 10200 条，其中 200 条是二次或多次重复合并导致的。为什么会出现这样的问题呢？这其实是由 Fluentd 自身的机制引起的。Fluentd 是日志事件交付系统，主要做的是日志不丢，因此它默认使用的是 At least once，即每条消息至少交付一次。具体文档可参考这里：[High Availability Config](https://docs.fluentd.org/deployment/high-availability)。那么该怎么解决这个问题呢？我这边做的比较简单粗暴，但目前看也是唯一切实可行的，就是在数仓直接把重复日志过滤掉。
+
+
 
 #### 参考文档
 
 [fluentd 官方文档](https://docs.fluentd.org/installation/install-by-dmg)
 
 [fluentd社区](https://www.fluentd.org/community)
+
+[fluent-plugin-oss](https://github.com/aliyun/fluent-plugin-oss)
 
 [fluentd简介](https://blog.csdn.net/u010038733/article/details/83185003)
 
