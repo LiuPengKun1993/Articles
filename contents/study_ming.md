@@ -33,3 +33,5 @@
 #### [28 怎么应对各种富文本表现需求？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/28%20怎么应对各种富文本表现需求？.md)
 #### [29 如何在iOS中进行面向测试驱动开发和面向行为驱动开发？](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/29%20如何在iOS中进行面向测试驱动开发和面向行为驱动开发？.md)
 #### [30 如何制定一套适合自己团队的iOS编码规范?](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/30%20如何制定一套适合自己团队的iOS编码规范%3F.md)
+#### [31 iOS开发学习资料和书单推荐](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/31%20iOS开发学习资料和书单推荐.md)
+#### [33 iOS系统内核XNU-App如何加载?](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/33%20iOS系统内核XNU-App如何加载%3F.md)
