@@ -35,3 +35,6 @@
 #### [30 如何制定一套适合自己团队的iOS编码规范?](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/30%20如何制定一套适合自己团队的iOS编码规范%3F.md)
 #### [31 iOS开发学习资料和书单推荐](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/31%20iOS开发学习资料和书单推荐.md)
 #### [33 iOS系统内核XNU-App如何加载?](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/33%20iOS系统内核XNU-App如何加载%3F.md)
+#### [34 iOS黑魔法RuntimeMethodSwizzling背后的原理](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/34%20iOS黑魔法RuntimeMethodSwizzling背后的原理.md)
+#### [35 libffi动态调用和定义C函数](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/35%20libffi动态调用和定义C函数.md)
+#### [36 iOS是怎么管理内存的?](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming/36%20iOS是怎么管理内存的%3F.md)
