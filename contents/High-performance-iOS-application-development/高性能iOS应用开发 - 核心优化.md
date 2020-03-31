@@ -544,3 +544,8 @@ GCD 屏障允许在并行分发队列上创建一个同步的点。当遇到屏�
 #### 3.5.5 异步优于同步
 
 要想实现线程安全、不死锁且易于维护的代码，强烈建议使用异步风格。能放到异步处理的，就放到异步。
+
+
+---
+
+相关文章：[高性能iOS应用开发 - iOS性能](https://github.com/liuzhongning/Articles/blob/master/contents/High-performance-iOS-application-development/高性能iOS应用开发%20-%20iOS性能.md)

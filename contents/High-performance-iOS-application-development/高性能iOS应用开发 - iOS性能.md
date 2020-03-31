@@ -1,6 +1,7 @@
 # 高性能iOS应用开发 - iOS性能
 > 《高性能iOS应用开发》是一本质量很高的 iOS 书籍，我从此书中系统的学到了很多东西。这篇博客是《高性能iOS应用开发》一书第三部分“iOS性能”的读书笔记，因为我对 APP 性能比较感兴趣，所以就先从第三部分“iOS性能”开始了。
 
+
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/High-performance-iOS-application-development/01.jpg)
 
 ## 1. 应用启动
@@ -387,7 +388,7 @@ Network Latency = Round-Trip Time - Time Spent on Server
 	- [移动端网络常见问题及优化对策](http://ios.jobbole.com/93110/)
 	- [无线性能优化：域名收敛](http://taobaofed.org/blog/2015/12/16/h5-performance-optimization-and-domain-convergence/?utm_source=tuicool)
 	- [App的网络测试中性能优化方案](https://segmentfault.com/a/1190000010001767)
-	- [iOS网络模块优化（失败重发、缓存请求有网发送）] (http://www.cnblogs.com/ziyi--caolu/p/8176331.html)
+	- [iOS网络模块优化（失败重发、缓存请求有网发送）](http://www.cnblogs.com/ziyi--caolu/p/8176331.html)
 	- [58 同城 iOS 客户端网络框架的演进之路](https://blog.csdn.net/byeweiyang/article/details/80128027)
 	- [阿里无线11.11：手机淘宝 521 性能优化项目揭秘](http://www.infoq.com/cn/articles/mobile-taobao-521-performance-optimization-project/)
 
@@ -541,3 +542,7 @@ HTTPS 不是万灵药——采取 HTTPS 不会神奇地确保所有的通信都�
 创建和验证数据签名需要计算内容哈希，这意味着会产生额外的内容传递。根据内容的大小，这可能需要较多时间，更不用说计算和验证数字签名所需的额外时间了。
 
 所有这些步骤会快速叠加起来。也许你有了世界上最保险和最安全的应用，但如果仅加载程序就需要 30 分钟，估计也没有人想使用它。对于这一点，即使 5 秒钟都可能对用户体验产生负面影响，甚者永远失去用户，尤其在其他应用可以满足同样需求的情况下。
+
+---
+
+相关文章：[高性能iOS应用开发 - 核心优化](https://github.com/liuzhongning/Articles/blob/master/contents/High-performance-iOS-application-development/高性能iOS应用开发%20-%20核心优化.md)
