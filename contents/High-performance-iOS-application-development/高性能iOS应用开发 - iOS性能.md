@@ -376,6 +376,21 @@ Network Latency = Round-Trip Time - Time Spent on Server
 
 [Charles](http://www.charlesproxy.com) 是一个非常强大的网络调试代理。使用比较简单，这里不做过多介绍，如有需要可参考网上博客。
 
+推荐一些之前收集的性能优化的博客：
+
+- iOS网络深度优化
+	- [iOS网络缓存扫盲篇--使用两行代码就能完成80%的缓存需求](https://github.com/ChenYilong/ParseSourceCodeStudy/blob/master/02_Parse的网络缓存与离线存储/iOS网络缓存扫盲篇.md#80的缓存需求两行代码就可满足)
+	- [携程App的网络性能优化实践](http://www.infoq.com/cn/articles/how-ctrip-improves-app-networking-performance/#)
+	- [移动 APP 网络优化概述](http://blog.cnbang.net/tech/3531/)
+	- [深度优化iOS网络模块](http://mrpeak.cn/blog/ios-network/)
+	- [iOS网络请求优化](https://renchao0711.github.io/2017/08/29/iOS网络优化/)
+	- [移动端网络常见问题及优化对策](http://ios.jobbole.com/93110/)
+	- [无线性能优化：域名收敛](http://taobaofed.org/blog/2015/12/16/h5-performance-optimization-and-domain-convergence/?utm_source=tuicool)
+	- [App的网络测试中性能优化方案](https://segmentfault.com/a/1190000010001767)
+	- [iOS网络模块优化（失败重发、缓存请求有网发送）] (http://www.cnblogs.com/ziyi--caolu/p/8176331.html)
+	- [58 同城 iOS 客户端网络框架的演进之路](https://blog.csdn.net/byeweiyang/article/details/80128027)
+	- [阿里无线11.11：手机淘宝 521 性能优化项目揭秘](http://www.infoq.com/cn/articles/mobile-taobao-521-performance-optimization-project/)
+
 
 ## 4. 数据共享
 
