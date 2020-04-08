@@ -72,3 +72,11 @@ flutter create hello_flutter
 关于 `! No devices available` 的问题，我这里测试的结论是，用模拟器运行的话是没作用的，只有真机运行，才会有改变：
 
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/Flutter/flutter_06.jpg)
+
+---
+
+
+- 2020.04.08 更新
+	- 问题 1：之前安装并配置好了 flutter，但是之后运行 `flutter doctor`时，报错 `zsh: command not found: flutter`，暂时性解决方案是执行`source ~/.bash_profile`；彻底解决方案是复制一份 `.bash_profile` 文件，改名为 `.zprofile`，终端执行 `source ~./zprofile`。
+	- 问题 2：用 VSCode 运行项目到 iOS 模拟器时，一直 `Launching...`，用 Xcode 直接运行也不行，解决方案是手动删除 `~/Library/Developer/Xcode/DerivedData` 文件夹下的文件，重新运行。
+	- 问题 3：执行命令时有时卡在了 `Waiting for another flutter command to release the startup lock`，解决方案是删除 flutter 的安装目录 /bin/cache/ 下的 lockfile 文件。
