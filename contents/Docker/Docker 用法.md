@@ -76,6 +76,32 @@ $ docker rmi $(docker images | grep "none" | awk '{print $3}')
 
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/Docker/docker02.jpg)
 
+### 删除容器及镜像详细
+
+- 杀死所有正在运行的容器
+
+```
+docker kill $(docker ps -a -q)
+```
+
+- 删除所有已经停止的容器
+
+```
+docker rm $(docker ps -a -q)
+```
+
+- 删除所有未打 dangling 标签的镜像
+
+```
+docker rmi $(docker images -q -f dangling=true)
+```
+
+- 删除所有镜像
+
+```
+docker rmi $(docker images -q)
+```
+
 #### 问题汇总
 
 1.报错 `Error response from daemon: conflict: unable to delete 4a67b006c338 (cannot be forced) - image is being used by running container 451b7b600276`
