@@ -6,7 +6,7 @@
 
 | 🐝 Project | 🏃 Article |
 |:-------|:-------|
-| iOS 架构 | [Model-View-Controller (MVC)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-Controller%20(MVC).md) <br> [MVC 下的网络层架构](https://github.com/liuzhongning/Articles/blob/master/contents/MVC%20下的网络层架构.md) <br> [Model-View-ViewModel+协调器 (MVVM-C)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-ViewModel%2B协调器%20(MVVM-C).md)|
+| iOS 架构 | [Model-View-Controller (MVC)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-Controller%20(MVC).md) <br> [MVC 下的网络层架构](https://github.com/liuzhongning/Articles/blob/master/contents/MVC%20下的网络层架构.md) <br> [Model-View-ViewModel+协调器 (MVVM-C)](https://github.com/liuzhongning/Articles/blob/master/contents/Model-View-ViewModel%2B协调器%20(MVVM-C).md) <br> [iOS 组件化练习（Demo）✨](https://github.com/liuzhongning/iOS-Component)|
 | iOS 性能 | [浅谈 iOS 性能优化](https://github.com/liuzhongning/Articles/blob/master/contents/浅谈%20iOS%20性能优化.md) <br> [高性能iOS应用开发 - iOS性能 ✨✨](https://github.com/liuzhongning/Articles/blob/master/contents/High-performance-iOS-application-development/高性能iOS应用开发%20-%20iOS性能.md) <br> [高性能iOS应用开发 - 核心优化 ✨✨](https://github.com/liuzhongning/Articles/blob/master/contents/High-performance-iOS-application-development/高性能iOS应用开发%20-%20核心优化.md)|
 | iOS 进阶学习 | [《iOS开发高手课》 - 戴铭 ✨✨✨](https://github.com/liuzhongning/Articles/blob/master/contents/study_ming.md)|
 | iOS 数据 | [iOS 表单格式上传 OSS](https://github.com/liuzhongning/Articles/blob/master/contents/iOS%20表单格式上传%20OSS.md)|
@@ -15,9 +15,9 @@
 | Cordova+Ionic+Angular | [混合开发 Cordova+Ionic+Angular 创建 iOS 及安卓项目](https://github.com/liuzhongning/Articles/blob/master/contents/混合开发%20Cordova%2BIonic%2BAngular%20创建%20iOS%20及安卓项目.md) <br> [Cordova 使用 App Center 进行热更新](https://github.com/liuzhongning/Articles/blob/master/contents/Cordova%20使用%20App%20Center%20进行热更新.md) |
 | JS| [JS 表单格式直传 OSS](https://github.com/liuzhongning/Articles/blob/master/contents/JS%20表单格式直传%20OSS.md)|
 | Vue| [Vue实战项目：后台电商管理系统 ✨✨✨](https://github.com/liuzhongning/vue_shop)|
-| Node.js | [Node.js OSS 后端签名 ✨](https://github.com/liuzhongning/Articles/blob/master/contents/Node.js%20OSS%20后端签名.md) <br> [基于 Egg.js 的 node 服务端，实现一些常见接口（Demo） ✨✨](https://github.com/liuzhongning/PracticeService)|
+| Node.js | [Node.js OSS 后端签名 ✨](https://github.com/liuzhongning/Articles/blob/master/contents/Node.js%20OSS%20后端签名.md) <br> [基于 Egg.js 的 node 服务端，实现了一些常见接口（Demo） ✨✨](https://github.com/liuzhongning/PracticeService)|
 | Android | [安卓 JS 互调 & 安卓开发过程中遇到的一些问题](https://github.com/liuzhongning/Articles/blob/master/contents/安卓%20JS%20互调%20%26%20安卓开发过程中遇到的一些问题.md)|
-| 大数据 | [Fluentd 读写 OSS ✨](https://github.com/liuzhongning/Articles/blob/master/contents/Fluentd%20读写%20OSS.md)|
+| 大数据 | [Fluentd 读写 OSS ✨](https://github.com/liuzhongning/Articles/blob/master/contents/BigData/Fluentd%20读写%20OSS.md) <br> [DataWorks 错误汇总](https://github.com/liuzhongning/Articles/blob/master/contents/BigData/DataWorks%20错误汇总.md)|
 | 设计模式 | [Swift 实现常见的设计模式 ✨✨✨](https://github.com/liuzhongning/Design-Patterns)|
 | 算法 | [Algorithm](https://github.com/liuzhongning/Algorithm)|
 | Docker | [Docker 用法](https://github.com/liuzhongning/Articles/blob/master/contents/Docker/Docker%20用法.md)  <br>  [Dockerfile 指令详解](https://github.com/liuzhongning/Articles/blob/master/contents/Docker/Dockerfile%20指令详解.md)|
