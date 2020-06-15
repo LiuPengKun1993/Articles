@@ -82,3 +82,11 @@ Caused by: java.net.ConnectException: Connection refused
 ![](https://github.com/liuzhongning/Articles/blob/master/resources/BigData/DataWorks-errors-01.jpg)
 
 由上图可知，数据源有问题，链接 polardb 失败，导致无法导数据到 polardb，解决方法是，找运维连通数据源，然后重跑报错脚本。
+
+---
+
+- 跨工作空间取数据时报权限问题（比如在 A 空间内，访问 B 空间的表）
+
+- 解决方案：主账号授权，授权链接：[https://help.aliyun.com/document_detail/27935.html?spm=a2c4g.11186623.6.927.da6a6847ZlA602](https://help.aliyun.com/document_detail/27935.html?spm=a2c4g.11186623.6.927.da6a6847ZlA602)
+
+还有个解决方案，可以根据具体的表名、资源名，以 Package 的方式，将数据部分授权给其它工作空间。参考文档：[https://help.aliyun.com/document_detail/34603.html?spm=a2c4g.11186623.6.934.29d12eb6JDuE5y](https://help.aliyun.com/document_detail/34603.html?spm=a2c4g.11186623.6.934.29d12eb6JDuE5y)
