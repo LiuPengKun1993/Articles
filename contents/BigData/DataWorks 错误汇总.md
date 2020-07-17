@@ -90,3 +90,25 @@ Caused by: java.net.ConnectException: Connection refused
 - 解决方案：主账号授权，授权链接：[https://help.aliyun.com/document_detail/27935.html?spm=a2c4g.11186623.6.927.da6a6847ZlA602](https://help.aliyun.com/document_detail/27935.html?spm=a2c4g.11186623.6.927.da6a6847ZlA602)
 
 还有个解决方案，可以根据具体的表名、资源名，以 Package 的方式，将数据部分授权给其它工作空间。参考文档：[https://help.aliyun.com/document_detail/34603.html?spm=a2c4g.11186623.6.934.29d12eb6JDuE5y](https://help.aliyun.com/document_detail/34603.html?spm=a2c4g.11186623.6.934.29d12eb6JDuE5y)
+
+---
+
+- Maxcompute 访问 OSS 的权限问题
+
+在读取外部表的时候，报了这样的错：
+
+```
+FAILED: Generating job conf failed, gen jobconf failed: Failed to obtain external data information, error msg: build/release64/common/io/oss/oss_client.cpp(97): OSSRequestException: req_id: 5F110AC115158031331734EA, http status code: 403, error code: UnknownError, message: Access denied, please make sure the oss host and oss bucket is matched, and the bucket should be authorized to the odps project with correct role_arn
+```
+
+这个报错信息不是很清晰，试了很多方法还是没搞定，无奈问了阿里云技术人员，说报错403是因为找不到地址（又是权限问题，运维的同学又修改东西了）。
+
+接着我在新建外部表的时候，报了这样的错误：
+
+```
+<Code>AccessDenied</Code> <Message>The bucket you access does not belong to you.</Message>
+```
+
+这个就比较清晰了，解决方案见下文档：
+
+[https://help.aliyun.com/document_detail/72777.html?spm=a2c4g.11186623.6.786.136e6d03xKJI2D](https://help.aliyun.com/document_detail/72777.html?spm=a2c4g.11186623.6.786.136e6d03xKJI2D)
