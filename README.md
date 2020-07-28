@@ -17,7 +17,7 @@
 | Vue| [Vue实战项目：后台电商管理系统 ✨✨✨](https://github.com/liuzhongning/vue_shop)|
 | Node.js | [Node.js OSS 后端签名 ✨](https://github.com/liuzhongning/Articles/blob/master/contents/Node.js%20OSS%20后端签名.md) <br> [基于 Egg.js 的 node 服务端，实现了一些常见接口（Demo） ✨✨](https://github.com/liuzhongning/PracticeService)|
 | Android | [安卓 JS 互调 & 安卓开发过程中遇到的一些问题](https://github.com/liuzhongning/Articles/blob/master/contents/安卓%20JS%20互调%20%26%20安卓开发过程中遇到的一些问题.md)|
-| 大数据 | [Fluentd 读写 OSS ✨](https://github.com/liuzhongning/Articles/blob/master/contents/BigData/Fluentd%20读写%20OSS.md) <br> [DataWorks 错误汇总](https://github.com/liuzhongning/Articles/blob/master/contents/BigData/DataWorks%20错误汇总.md) <br> [QuickBI 问题汇总](https://github.com/liuzhongning/Articles/blob/master/contents/BigData/QuickBI%20问题汇总.md)|
+| 大数据 | [Fluentd 读写 OSS ✨](https://github.com/liuzhongning/Articles/blob/master/contents/BigData/Fluentd%20读写%20OSS.md) <br> [DataWorks 错误汇总](https://github.com/liuzhongning/Articles/blob/master/contents/BigData/DataWorks%20错误汇总.md) <br> [QuickBI 问题汇总](https://github.com/liuzhongning/Articles/blob/master/contents/BigData/QuickBI%20问题汇总.md) <br> [canal 问题汇总](https://github.com/liuzhongning/Articles/blob/master/contents/BigData/canal%20问题汇总.md)|
 | 设计模式 | [Swift 实现常见的设计模式 ✨✨✨](https://github.com/liuzhongning/Design-Patterns)|
 | 算法 | [Algorithm](https://github.com/liuzhongning/Algorithm)|
 | Docker | [Docker 用法](https://github.com/liuzhongning/Articles/blob/master/contents/Docker/Docker%20用法.md)  <br>  [Dockerfile 指令详解](https://github.com/liuzhongning/Articles/blob/master/contents/Docker/Dockerfile%20指令详解.md)|
