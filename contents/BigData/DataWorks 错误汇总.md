@@ -112,3 +112,30 @@ FAILED: Generating job conf failed, gen jobconf failed: Failed to obtain externa
 这个就比较清晰了，解决方案见下文档：
 
 [https://help.aliyun.com/document_detail/72777.html?spm=a2c4g.11186623.6.786.136e6d03xKJI2D](https://help.aliyun.com/document_detail/72777.html?spm=a2c4g.11186623.6.786.136e6d03xKJI2D)
+
+---
+
+- MaxCompute 设置某些表的只读权限给某些用户
+
+数仓里几个表里面存的是线上数据，需要控制其读写权限，目的是开发人员只能读，不能写，保证数据安全性。
+
+根据这个文档，可以给用户配置角色，[角色管理](https://help.aliyun.com/document_detail/27934.html?spm=a2c4g.11186623.6.927.49d29d61tRALZe)。
+
+
+根据这个文档，可以给某个角色设置为只读权限，[Policy和Download权限控制](https://help.aliyun.com/document_detail/162576.html?spm=a2c4g.11186623.6.930.3cc31afdqENv14)。
+
+总体脚本大概如下：
+
+```
+-- 创建角色
+create role access_deny_test_table_developers;
+-- 给用户指派某种角色
+grant access_deny_test_table_developers to liupengkun@septnet-x7.onaliyun.com;
+-- 授权 MaxCompute 项目中 test11 表的只读权限给 access_deny_test_table_developers 角色。
+grant Select on table test11 to role access_deny_test_table_developers privilegeproperties("policy" = "true", "allow"="true");
+
+```
+
+注：需要项目所属者（Project Owner）或者拥有Super_Administrator角色的用户才可以执行。
+
+---
