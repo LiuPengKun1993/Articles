@@ -32,3 +32,13 @@ canal 是通过模拟成为 mysql 的 slave 的方式，监听 mysql 的 binlog 
 
 ---
 
+#### Caused by: java.io.IOException: ErrorPacket [errorNumber=1142, fieldCount=-1, message=SHOW command denied to user  问题
+
+见下图：
+
+![](https://github.com/liuzhongning/Articles/blob/master/resources/BigData/DataWorks-canal-errors-03.jpg)
+
+原因是因为没有这个表的权限, 订阅时过滤掉，或者加权限即可。
+
+---
+
