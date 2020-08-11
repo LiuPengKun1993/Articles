@@ -139,3 +139,17 @@ grant Select on table test11 to role access_deny_test_table_developers privilege
 注：需要项目所属者（Project Owner）或者拥有Super_Administrator角色的用户才可以执行。
 
 ---
+
+
+- MAPJOIN 在 Map 阶段会将指定表的数据全部加载在内存中。因此指定的表仅能为小表，且表被加载到内存后占用的总内存不得超过 640MB。
+
+报错信息：
+
+```
+FAILED: ODPS-0010000:System internal error - fuxi job failed, caused by: CheckInputSize for Hash Join Cursor failed, reader id StreamLineRead4 : small table exceeds, memory limit(MB) 640, size in memory from meta 3842607683
+```
+
+- 解决方法 1：将 MAPJOIN 去掉。。
+- 解决方法 2：加一句 `set odps.sql.mapjoin.memory.max=2048;`
+
+如果超过2048M，就应该需要改实现方式了。
